@@ -1,0 +1,3706 @@
+[
+  {
+    "address": {
+      "city": "Olszówka",
+      "postalCode": "62-641",
+      "street": "19/A"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Olszówka",
+    "coordinates": [18.8470249176025, 52.1884422302246],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "10:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "60-373",
+      "street": "Jutrzenka 8"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [16.8773345947266, 52.4108200073242],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-835",
+      "street": "Radłowska 9"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 94",
+    "coordinates": [21.1938209533691, 52.18505859375],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-696",
+      "street": "Domaniewska 41"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 113",
+    "coordinates": [21.000940322876, 52.1819953918457],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-837",
+      "street": "Aleja Władysława Reymonta 12"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 116",
+    "coordinates": [20.93772315979, 52.2743530273438],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Krośniewice",
+      "postalCode": "99-340",
+      "street": "Poznańska 1"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Krośniewice",
+    "coordinates": [19.1693725585937, 52.2559585571289],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "15:30"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-043",
+      "street": "Warszawska 137"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 69",
+    "coordinates": [16.9863834381104, 52.410026550293],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "10:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "10:30",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "60-696",
+      "street": "Serbska 7"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat POZ25A",
+    "coordinates": [16.95058, 52.43289],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "60-696",
+      "street": "Serbska 7"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat POZ25A",
+    "coordinates": [16.95058, 52.43289],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-742",
+      "street": "Długa 6"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: PZ-211405-05-33",
+    "coordinates": [16.933106, 52.40396],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "06:00",
+        "to": "22:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "06:00",
+        "to": "22:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "06:00",
+        "to": "22:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "06:00",
+        "to": "22:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "06:00",
+        "to": "22:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "22:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "09:00",
+        "to": "18:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Konin",
+      "postalCode": "62-510",
+      "street": "ALEJA 1 MAJA 12"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: PZ-961268-39-10",
+    "coordinates": [18.2545, 52.2283],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "06:00",
+        "to": "17:30"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "06:00",
+        "to": "17:30"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "06:00",
+        "to": "17:30"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "06:00",
+        "to": "17:30"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "06:00",
+        "to": "17:30"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "07:00",
+        "to": "14:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-024",
+      "street": "Al. Jerozolimskie 54"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW28A",
+    "coordinates": [21.00411, 52.22906],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Śrem",
+      "postalCode": "63-100",
+      "street": "Plac 20 Października 41"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Śrem 1",
+    "coordinates": [17.0222110748291, 52.0949172973633],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "09:00",
+        "to": "13:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-832",
+      "street": "Patriotów 172"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW63AP",
+    "coordinates": [21.18854, 52.18569],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-832",
+      "street": "Patriotów 172"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW63AP",
+    "coordinates": [21.18854, 52.18569],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-392",
+      "street": "Powstańców Śląskich 10"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 149",
+    "coordinates": [20.9173316955566, 52.2249794006348],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Ożarów Mazowiecki",
+      "postalCode": "05-850",
+      "street": "Kolejowa 6"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Ożarów Mazowiecki",
+    "coordinates": [20.7960300445557, 52.2081565856934],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Swarzędz",
+      "postalCode": "62-020",
+      "street": "Dworcowa 7"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat SWD02N",
+    "coordinates": [17.07402, 52.4052],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-987",
+      "street": "Wał Miedzeszyński 324"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW13N",
+    "coordinates": [21.13205, 52.18538],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-786",
+      "street": "al. Rodowicza Anody 6"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW116A",
+    "coordinates": [21.03687, 52.16267],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-931",
+      "street": "Wólczyńska 65/3A"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [20.9212837219238, 52.2816162109375],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-972",
+      "street": "Prymasa Augusta Hlonda 2/U-4"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 76",
+    "coordinates": [21.0706787109375, 52.1606941223145],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Żyrardów",
+      "postalCode": "96-300",
+      "street": "Jaktorowska 23"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Żyrardów 1",
+    "coordinates": [20.4625625610352, 52.0548934936523],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-770",
+      "street": "Stefana Szolc Rogozińskiego 4"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 130",
+    "coordinates": [21.0534420013428, 52.1503257751465],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Zagórów",
+      "postalCode": "62-410",
+      "street": "Duży Rynek 13"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Zagórów",
+    "coordinates": [17.9031238555908, 52.1691398620605],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "10:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Nowy Tomyśl",
+      "postalCode": "64-300",
+      "street": "Marszałka Józefa Piłsudskiego 5"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Nowy Tomyśl",
+    "coordinates": [16.1321144104004, 52.315616607666],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "13:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "18:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-193",
+      "street": "Ostrobramska 124"
+    },
+    "type": "POCZTA_POLSKA_ORLEN",
+    "name": "Stacja PKN Orlen 0339",
+    "coordinates": [21.0874004364014, 52.2365493774414],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "WORKING",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "HOLIDAY",
+        "from": "00:00",
+        "to": "23:59"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-280",
+      "street": "Osiedle Czecha 73/74"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 54",
+    "coordinates": [16.9772510528564, 52.3860244750977],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "09:00",
+        "to": "13:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-640",
+      "street": "Osiedle Przyjaźni 115"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 50",
+    "coordinates": [16.9331932067871, 52.434024810791],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-440",
+      "street": "Bukowa 4"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 33",
+    "coordinates": [16.9046764373779, 52.3650741577148],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-310",
+      "street": "Szczepankowo 72"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 25",
+    "coordinates": [17.0100517272949, 52.3639984130859],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "09:00",
+        "to": "13:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-890",
+      "street": "Tadeusza Kościuszki 77"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 1",
+    "coordinates": [16.9193572998047, 52.4064445495606],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Zbąszynek",
+      "postalCode": "66-210",
+      "street": "PCK 1"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Zbąszynek",
+    "coordinates": [15.8166494369507, 52.2425689697266],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "09:00",
+        "to": "16:30"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "09:00",
+        "to": "16:30"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "09:00",
+        "to": "16:30"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "09:00",
+        "to": "20:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "09:00",
+        "to": "16:30"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Sochaczew",
+      "postalCode": "96-506",
+      "street": "Warszawska 119/7"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Sochaczew 1",
+    "coordinates": [20.2675762176514, 52.2273826599121],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "10:00",
+        "to": "21:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "10:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-497",
+      "street": "Generała Felicjana Sławoja Składkowskiego 4"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 142",
+    "coordinates": [20.9000110626221, 52.1879196166992],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "03-295",
+      "street": "Gościnna 2"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 148",
+    "coordinates": [21.0666542053223, 52.3149642944336],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-920",
+      "street": "Dobra 56/66"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 1",
+    "coordinates": [21.0242881774902, 52.2425537109375],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Pruszków",
+      "postalCode": "05-800",
+      "street": "Fryderyka Chopina 64"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Pruszków 1",
+    "coordinates": [20.7973175048828, 52.1612205505371],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "60-240",
+      "street": "Głogowska 132/140"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 74",
+    "coordinates": [16.8913803100586, 52.3881149291992],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-905",
+      "street": "Gołkowska 17"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 76",
+    "coordinates": [21.0590362548828, 52.1927375793457],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Rychwał",
+      "postalCode": "62-570",
+      "street": "Sportowa 1A"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Rychwał k. Konina",
+    "coordinates": [18.1669025421143, 52.0723724365234],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "10:00",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "17:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "17:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "17:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:00",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Stare Babice",
+      "postalCode": "05-082",
+      "street": "Rynek 11"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Stare Babice",
+    "coordinates": [20.8426494598389, 52.2500343322754],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-030",
+      "street": "Kinowa 19/3"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "AP Warszawa",
+    "coordinates": [21.0709552764893, 52.2429885864258],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "11:00",
+        "to": "16:00"
+      },
+      {
+        "day": "MONDAY",
+        "from": "16:30",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "10:00",
+        "to": "16:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "16:30",
+        "to": "19:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "16:30",
+        "to": "19:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:30",
+        "to": "17:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:30",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-583",
+      "street": "Filarecka 3"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 32",
+    "coordinates": [20.9825553894043, 52.2687606811523],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "03-726",
+      "street": "Jana Zamoyskiego 47a"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 4",
+    "coordinates": [21.0499248504639, 52.2478179931641],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Legionowo",
+      "postalCode": "05-122",
+      "street": "Piaskowa 1"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat LGE04N",
+    "coordinates": [20.94676, 52.41152],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-030",
+      "street": "Kinowa 19/3"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "AP Warszawa",
+    "coordinates": [21.0709552764893, 52.2429885864258],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "11:00",
+        "to": "16:00"
+      },
+      {
+        "day": "MONDAY",
+        "from": "16:30",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "10:00",
+        "to": "16:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "16:30",
+        "to": "19:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "16:30",
+        "to": "19:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:30",
+        "to": "17:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:30",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "03-189",
+      "street": "Myśliborska 102"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 91",
+    "coordinates": [20.9548492431641, 52.3210220336914],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Wyszogród",
+      "postalCode": "09-450",
+      "street": "Rynek 1"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Wyszogród",
+    "coordinates": [20.1920566558838, 52.3855400085449],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "20:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:00",
+        "to": "15:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-100",
+      "street": "Aleja Dwudziestolatków 3"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 119",
+    "coordinates": [20.9685173034668, 52.1926078796387],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-800",
+      "street": "Puławska 424"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 93",
+    "coordinates": [21.017370223999, 52.1271591186523],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Ślesin",
+      "postalCode": "62-561",
+      "street": "Kleczewska 14"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Ślesin k. Konina",
+    "coordinates": [18.3036613464355, 52.370719909668],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-646",
+      "street": "Aleja Armii Ludowej 26"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 10",
+    "coordinates": [21.0086116790771, 52.2177658081055],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "09:00",
+        "to": "12:00"
+      },
+      {
+        "day": "MONDAY",
+        "from": "12:30",
+        "to": "16:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "09:00",
+        "to": "12:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "12:30",
+        "to": "16:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "12:30",
+        "to": "20:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "09:00",
+        "to": "12:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "12:30",
+        "to": "16:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "09:00",
+        "to": "12:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "12:30",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Orzechowo",
+      "postalCode": "62-322",
+      "street": "Miłosławska 8"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat OCH01N",
+    "coordinates": [17.48033, 52.12826],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-141",
+      "street": "Łukowska 2a"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 44",
+    "coordinates": [21.1127910614014, 52.2368507385254],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "13:30"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-559",
+      "street": "Puławska 44"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: WS-477349-44-31",
+    "coordinates": [21.021633, 52.203031],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "07:00",
+        "to": "15:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-694",
+      "street": "Tytusa Chałubińskiego 8"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 81",
+    "coordinates": [21.00417137146, 52.226245880127],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "20:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "09:00",
+        "to": "16:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "09:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-477",
+      "street": "Fasolowa 36"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 97",
+    "coordinates": [20.9058532714844, 52.2003593444824],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-191",
+      "street": "Józefa Lewartowskiego 5"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 47",
+    "coordinates": [20.9952640533447, 52.2519912719727],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Legionowo",
+      "postalCode": "05-119",
+      "street": "Zegrzyńska 17"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Legionowo 5",
+    "coordinates": [20.9496078491211, 52.4046134948731],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "09:00",
+        "to": "13:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-631",
+      "street": "Jana Pawła Woronicza 50"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 13",
+    "coordinates": [21.0027103424072, 52.1893157958984],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-126",
+      "street": "Stefana Baleya 9"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 119",
+    "coordinates": [20.9779090881348, 52.1970863342285],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Lądek",
+      "postalCode": "62-406",
+      "street": "Pyzderska 20"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Zagórów",
+    "coordinates": [17.9270477294922, 52.2095375061035],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "09:00",
+        "to": "11:00"
+      },
+      {
+        "day": "MONDAY",
+        "from": "11:30",
+        "to": "16:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "09:00",
+        "to": "11:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "11:30",
+        "to": "16:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "11:30",
+        "to": "16:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "09:00",
+        "to": "11:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "11:30",
+        "to": "16:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "10:00",
+        "to": "11:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "11:30",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-491",
+      "street": "Rolna 19"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [16.9169845581055, 52.3830375671387],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-485",
+      "street": "28 Czerwca 1956 R. 177"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [16.9150905609131, 52.3856506347656],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-485",
+      "street": "28 Czerwca 1956 R. 177"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [16.9150905609131, 52.3856506347656],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Paprotnia",
+      "postalCode": "96-515",
+      "street": "Ojca Maksymiliana Kolbego 6"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Sochaczew 1",
+    "coordinates": [20.4228687286377, 52.2047080993652],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "18:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-241",
+      "street": "Przedpole 1A"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW46N",
+    "coordinates": [20.94, 52.19125],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-241",
+      "street": "Przedpole 1A"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW46N",
+    "coordinates": [20.94, 52.19125],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Wiskitki",
+      "postalCode": "96-315",
+      "street": "Plac Wolności 26"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Wiskitki",
+    "coordinates": [20.3838863372803, 52.0867233276367],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "15:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "10:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-577",
+      "street": "Marszałkowska 26"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 57",
+    "coordinates": [21.0197906494141, 52.2176742553711],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:30"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-485",
+      "street": "Aleja Komandosów 36"
+    },
+    "type": "POCZTA_POLSKA_RUCH",
+    "name": "Kiosk/Salonik RUCH",
+    "coordinates": [21.1639995574951, 52.2541007995605],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "15:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "18:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-360",
+      "street": "Starołęcka 42"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 41",
+    "coordinates": [16.9321060180664, 52.3690452575684],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Kórnik",
+      "postalCode": "62-035",
+      "street": "Poznańska 87"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat KOR02N",
+    "coordinates": [17.0774, 52.25588],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Łomianki",
+      "postalCode": "05-092",
+      "street": "Warszawska 258"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Łomianki",
+    "coordinates": [20.8821544647217, 52.3426742553711],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-957",
+      "street": "SOBIESKIEGO 18"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: WS-124578-20-04",
+    "coordinates": [21.063246, 52.17532],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "07:00",
+        "to": "17:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "07:00",
+        "to": "17:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "07:00",
+        "to": "17:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "07:00",
+        "to": "17:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "07:00",
+        "to": "17:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "07:00",
+        "to": "14:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-748",
+      "street": "Szamocka 8"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 86",
+    "coordinates": [20.9587173461914, 52.2573318481445],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "09:00",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "13:00",
+        "to": "20:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "10:00",
+        "to": "17:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "13:00",
+        "to": "20:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "10:00",
+        "to": "17:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Koło",
+      "postalCode": "62-600",
+      "street": "Tuwima 26"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat KOO02A",
+    "coordinates": [18.6305, 52.20269],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Kutno",
+      "postalCode": "99-300",
+      "street": "Plac Piłsudskiego 10"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: LD-456319-10-47",
+    "coordinates": [19.357387, 52.232609],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "06:00",
+        "to": "18:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "14:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-989",
+      "street": "Zaściankowa 6"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW47N",
+    "coordinates": [21.1187, 52.17001],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-989",
+      "street": "Zaściankowa 6"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW47N",
+    "coordinates": [21.1187, 52.17001],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "00-716",
+      "street": "Bartycka 24"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW131A",
+    "coordinates": [21.05782, 52.21343],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Konin",
+      "postalCode": "62-510",
+      "street": "Wyzwolenia 9"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: PZ-732909-39-08",
+    "coordinates": [18.2792, 52.2311],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "06:00",
+        "to": "17:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "06:00",
+        "to": "17:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "06:00",
+        "to": "17:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "06:00",
+        "to": "17:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "06:00",
+        "to": "17:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "14:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-222",
+      "street": "Al. Jerozolimskie 185"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW67A",
+    "coordinates": [20.95057, 52.20932],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Gąbin",
+      "postalCode": "09-530",
+      "street": "Sławoja Składkowskiego 18"
+    },
+    "type": "POCZTA_POLSKA_ORLEN",
+    "name": "Stacja PKN Orlen 0992",
+    "coordinates": [19.7282295227051, 52.4011878967285],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "WORKING",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "HOLIDAY",
+        "from": "00:00",
+        "to": "23:59"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Stare Babice",
+      "postalCode": "05-082",
+      "street": "Sienkiewicza 77"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat STB01A",
+    "coordinates": [20.83798, 52.25572],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-312",
+      "street": "Siemiatycka 9-11"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW154AP",
+    "coordinates": [20.90371, 52.22542],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-797",
+      "street": "Aleja Komisji Edukacji Narodowej 19/U4"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 78",
+    "coordinates": [21.0622406005859, 52.1343193054199],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Grodzisk Wielkopolski",
+      "postalCode": "62-065",
+      "street": "Rakoniewicka 33"
+    },
+    "type": "POCZTA_POLSKA_ORLEN",
+    "name": "Stacja PKN Orlen 0438",
+    "coordinates": [16.3647804260254, 52.2163887023926],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "WORKING",
+        "from": "00:00",
+        "to": "23:59"
+      },
+      {
+        "day": "HOLIDAY",
+        "from": "00:00",
+        "to": "23:59"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Luboń",
+      "postalCode": "62-031",
+      "street": "Kościuszki 102"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat LBO249",
+    "coordinates": [16.86587, 52.3522],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-975",
+      "street": "MŁODA 19"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: WS-746958-11-30",
+    "coordinates": [21.211211, 52.160562],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "06:00",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "06:00",
+        "to": "20:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "06:00",
+        "to": "20:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "06:00",
+        "to": "20:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "06:00",
+        "to": "20:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "16:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-245",
+      "street": "Abp.Baraniaka 100"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat POZ11A",
+    "coordinates": [16.96886, 52.39987],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Stęszew",
+      "postalCode": "62-060",
+      "street": "Poznańska 21"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Stęszew",
+    "coordinates": [16.7059764862061, 52.281566619873],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "09:00",
+        "to": "13:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "09:00",
+        "to": "18:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Sochaczew",
+      "postalCode": "96-500",
+      "street": "1 Maja 22"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Sochaczew 1",
+    "coordinates": [20.2407531738281, 52.2284355163574],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "01-233",
+      "street": "Józefa Bema 89"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [20.9589595794678, 52.2300453186035],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Błonie-Wieś",
+      "postalCode": "05-870",
+      "street": "Sochaczewska 64"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat BLO910",
+    "coordinates": [20.60057, 52.19954],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "03-290",
+      "street": "Geodezyjna 76"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW76A",
+    "coordinates": [21.07956, 52.30994],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Czempiń",
+      "postalCode": "64-020",
+      "street": "Księdza Jerzego Popiełuszki 16"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Czempiń",
+    "coordinates": [16.7578029632568, 52.1425743103027],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "12:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:30",
+        "to": "18:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Łomianki",
+      "postalCode": "05-092",
+      "street": "Zachodnia 20"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat LMN01AP",
+    "coordinates": [20.8797, 52.33168],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-210",
+      "street": "al. Krakowska 274"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat WAW35B",
+    "coordinates": [20.9635, 52.19528],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-588",
+      "street": "Aleja Niepodległości 121/123"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 48",
+    "coordinates": [21.0114517211914, 52.1993446350098],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "04-043",
+      "street": "Ostrzycka 2/4"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 127",
+    "coordinates": [21.0788803100586, 52.2343330383301],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Konin",
+      "postalCode": "62-500",
+      "street": "Szpitalna 12"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat KON01A",
+    "coordinates": [18.24481, 52.20163],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "03-148",
+      "street": "Odkryta 44C"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Warszawa 139",
+    "coordinates": [20.9405956268311, 52.3327980041504],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "21:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Babimost",
+      "postalCode": "66-110",
+      "street": "Wolsztyńska 3"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Babimost",
+    "coordinates": [15.8281116485596, 52.1648292541504],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "08:00",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "08:00",
+        "to": "17:30"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "08:00",
+        "to": "17:30"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "08:00",
+        "to": "17:30"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "08:00",
+        "to": "17:30"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Babimost",
+      "postalCode": "66-110",
+      "street": "Wolsztyńska 1"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat BAB01N",
+    "coordinates": [15.83818, 52.16529],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-758",
+      "street": "Garbary 56"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [16.9379196166992, 52.4075126647949],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-120",
+      "street": "Osiedle Piastowskie 118"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Poznań 68",
+    "coordinates": [16.9424514770508, 52.3862457275391],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "10:00",
+        "to": "20:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "09:00",
+        "to": "19:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "09:00",
+        "to": "19:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "09:00",
+        "to": "19:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "09:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-788",
+      "street": "Zamiany 12"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 130",
+    "coordinates": [21.0357704162598, 52.1599311828613],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Poznań",
+      "postalCode": "61-758",
+      "street": "Garbary 56"
+    },
+    "type": "POCZTA_POLSKA_ZABKA",
+    "name": "Sklep Żabka",
+    "coordinates": [16.9379196166992, 52.4075126647949],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "06:00",
+        "to": "23:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "06:00",
+        "to": "23:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Krosno Odrzańskie",
+      "postalCode": "66-600",
+      "street": "Pocztowa 14"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Krosno Odrzańskie 1",
+    "coordinates": [15.1001501083374, 52.0462875366211],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "10:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "18:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-788",
+      "street": "Zamiany 12"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 130",
+    "coordinates": [21.0357704162598, 52.1599311828613],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Koło",
+      "postalCode": "62-600",
+      "street": "Henryka Sienkiewicza 24"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Koło 1",
+    "coordinates": [18.638240814209, 52.1993293762207],
+    "openHours": [
+      {
+        "day": "SATURDAY",
+        "from": "08:00",
+        "to": "14:00"
+      },
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Izabelin C",
+      "postalCode": "05-080",
+      "street": "Kazimierza Tetmajera 1"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "UP Izabelin k. Warszawy",
+    "coordinates": [20.8166427612305, 52.2925872802734],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Mosina",
+      "postalCode": "62-050",
+      "street": "Poniatowskiego 1B"
+    },
+    "type": "PACZKOMAT",
+    "name": "Paczkomat MOS01ML",
+    "coordinates": [16.8497, 52.25029],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "00:00",
+        "to": "24:00"
+      },
+      {
+        "day": "SUNDAY",
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Warszawa",
+      "postalCode": "02-782",
+      "street": "Pasaż Ursynowski 1"
+    },
+    "type": "POCZTA_POLSKA",
+    "name": "FUP Warszawa 130",
+    "coordinates": [21.0366611480713, 52.1533737182617],
+    "openHours": [
+      {
+        "day": "WORKING",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ]
+  },
+  {
+    "address": {
+      "city": "Rakoniewice",
+      "postalCode": "62-067",
+      "street": "Plac Powstańców Wlkp. 10"
+    },
+    "type": "RUCH",
+    "name": "PACZKA w RUCHu: PZ-674259-17-60",
+    "coordinates": [16.272972, 52.138561],
+    "openHours": [
+      {
+        "day": "MONDAY",
+        "from": "07:00",
+        "to": "19:00"
+      },
+      {
+        "day": "TUESDAY",
+        "from": "07:00",
+        "to": "19:00"
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": "07:00",
+        "to": "19:00"
+      },
+      {
+        "day": "THURSDAY",
+        "from": "07:00",
+        "to": "19:00"
+      },
+      {
+        "day": "FRIDAY",
+        "from": "07:00",
+        "to": "19:00"
+      },
+      {
+        "day": "SATURDAY",
+        "from": "07:00",
+        "to": "14:00"
+      }
+    ]
+  }
+]
