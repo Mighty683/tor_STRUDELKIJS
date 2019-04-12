@@ -17,8 +17,9 @@ function initServer () {
   })
 }
 
-function mapData (entry) {
+function mapData (entry, index) {
   return {
+    id: index,
     address: {
       city: entry.city,
       postalCode: entry['postal-code'],

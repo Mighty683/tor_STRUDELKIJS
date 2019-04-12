@@ -5,18 +5,29 @@ import requests from '../requests';
 class Main extends Component {
   constructor() {
     super();
-    this.state.points = [];
+    this.state = {
+      points: []
+    };
   }
 
   async componentDidMount() {
     try {
-      // TODO
+      const points = await requests.getPoints(52, 21);
+      if (points && points.data) {
+        this.setState({
+          points: points.data
+        });
+      }
     } catch (e) {
       console.log(e);
     }
   }
   render() {
-    return <div>test</div>;
+    return (
+      <div>
+        {this.state.points.length && <Map points={this.state.points} />}
+      </div>
+    );
   }
 }
 
