@@ -1,0 +1,32 @@
+import React, { Component } from 'react';
+
+import { Row, Col, Button, Typography, Icon } from 'antd';
+
+import './style.scss';
+
+import mark from '../../assets/mark.svg';
+
+const { Title } = Typography;
+
+class Main extends Component {
+  render() {
+    return (
+      <Row type="flex" justify="center" align="middle" className="main-page">
+        <Col span={24} style={{ textAlign: 'center' }}>
+          <img className="main-page__icon" src={mark} alt="Mark" />
+          <Title>Oceniator punktów 3000</Title>
+          <Title level={3}>
+            Narzędzie służące wyszukiwaniu oraz ocenianiu punktów odbioru
+            przesyłek <Icon type="smile" />
+          </Title>
+
+          <Button className="main-page__button" type="primary">
+            <strong>Zaczynam!</strong>
+          </Button>
+        </Col>
+      </Row>
+    );
+  }
+}
+
+export default Main;
