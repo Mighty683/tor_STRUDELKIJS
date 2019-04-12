@@ -1,0 +1,19 @@
+{
+  "name": "backend_braincode_strudelki_js",
+  "version": "1.0.0",
+  "description": "tajny backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllegroBraincode/tor_STRUDELKIJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllegroBraincode/tor_STRUDELKIJS/issues"
+  },
+  "homepage": "https://github.com/AllegroBraincode/tor_STRUDELKIJS#readme"
+}
