@@ -5,12 +5,15 @@ import requests from '../requests';
 class Main extends Component {
   constructor() {
     super();
-    this.state.points = [];
+    this.state = {
+      points: []
+    };
   }
 
   async componentDidMount() {
     try {
-      // TODO
+      const points = await requests.getPoints(52, 21);
+      console.log(points);
     } catch (e) {
       console.log(e);
     }
