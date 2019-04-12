@@ -7,9 +7,10 @@ class Star extends Component {
     this.myRef = React.createRef();
   }
   render() {
+    console.log(this.props.data);
     return (
       <div>
-        <p>{this.props.data}</p>
+        <p>{this.props.data.address.postalCode}</p>
         <canvas ref={this.myRef} width="200" height="200" />
       </div>
     );
@@ -22,7 +23,7 @@ class Star extends Component {
         labels: ['Running', 'Swimming', 'Eating'],
         datasets: [
           {
-            data: [20, 10, 4]
+            data: [20, 18, 15]
           }
         ]
       },
