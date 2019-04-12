@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
+const MapMarker = ({ name }) => <div>{name}</div>;
 class Map extends Component {
   static defaultProps = {
     center: {
@@ -16,7 +17,9 @@ class Map extends Component {
         bootstrapURLKeys={{ key: process.env.MAPS_KEY }}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
-      />
+      >
+        {this.props.points && this.props.points.map(point => <MapMarker />)}
+      </GoogleMapReact>
     );
   }
 }

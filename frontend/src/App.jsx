@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Main from './pages/Main';
+import SelectPoint from './pages/SelectPoint';
 
 import { Layout, Icon } from 'antd';
 
@@ -25,6 +26,7 @@ class App extends Component {
           </Header>
           <Content>
             <Route path="/" exact component={Main} />
+            <Route path="/select-point" exact component={SelectPoint} />
           </Content>
           <Footer style={{ textAlign: 'center' }}>
             <strong>Strudelki.js</strong> © 2019 Created with{' '}
