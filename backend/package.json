@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AllegroBraincode/tor_STRUDELKIJS/issues"
   },
-  "homepage": "https://github.com/AllegroBraincode/tor_STRUDELKIJS#readme"
+  "homepage": "https://github.com/AllegroBraincode/tor_STRUDELKIJS#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
