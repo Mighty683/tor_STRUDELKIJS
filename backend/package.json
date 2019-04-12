@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/AllegroBraincode/tor_STRUDELKIJS#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "btoa": "^1.2.1",
     "express": "^4.16.4"
   }
 }
