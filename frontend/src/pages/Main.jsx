@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './App.scss';
 
-class App extends Component {
+class Main extends Component {
   render() {
     return <div />;
   }
 }
 
-export default App;
+export default Main;
