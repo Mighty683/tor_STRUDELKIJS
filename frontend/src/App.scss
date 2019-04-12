@@ -1,1 +1,30 @@
 @import '~antd/dist/antd.css';
+@import 'styles/variables';
+
+.ant-layout-header {
+  background-color: $color-white;
+  border-bottom: $border-style;
+}
+
+.main-page {
+  min-height: calc(100vh - 69px - 64px);
+  background-color: $color-white;
+}
+
+.icon-footer {
+  margin-left: 4px;
+
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.4);
+    }
+  }
+}
