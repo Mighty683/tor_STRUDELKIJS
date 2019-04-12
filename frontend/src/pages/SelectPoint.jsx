@@ -13,13 +13,21 @@ class Main extends Component {
   async componentDidMount() {
     try {
       const points = await requests.getPoints(52, 21);
-      console.log(points);
+      if (points && points.data) {
+        this.setState({
+          points: points.data
+        });
+      }
     } catch (e) {
       console.log(e);
     }
   }
   render() {
-    return <div>test</div>;
+    return (
+      <div>
+        {this.state.points.length && <Map points={this.state.points} />}
+      </div>
+    );
   }
 }
 
