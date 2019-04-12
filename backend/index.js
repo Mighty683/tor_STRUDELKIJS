@@ -3,6 +3,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = express()
+const SEARCH_RANGE = 0.2
 
 function initServer () {
   app.use(bodyParser.json())
@@ -16,20 +17,6 @@ function initServer () {
   })
 }
 
-/** 
- * CSV OBJECT EXAMPLE
-{
-  "type": "POCZTA_POLSKA",
-  "name": "FUP Puławy 1",
-  "adress": "Lubelska 18",
-  "postal-code": "24-112",
-  "city": "Puławy",
-  "geo-length": "21.981315612793",
-  "geo-width": "51.4146575927734",
-  "open-houres": "[{\"day\":\"MONDAY\",\"from\":\"10:00\",\"to\":\"17:00\"},{\"day\":\"TUESDAY\",\"from\":\"10:00\",\"to\":\"17:00\"},{\"day\":\"WEDNESDAY\",\"from\":\"10:00\",\"to\":\"17:00\"},{\"day\":\"THURSDAY\",\"from\":\"10:00\",\"to\":\"17:00\"},{\"day\":\"FRIDAY\",\"from\":\"10:00\",\"to\":\"20:00\"}]",
-  "marks": ""
-}
-**/
 function mapData (entry) {
   return {
     address: {
@@ -39,9 +26,18 @@ function mapData (entry) {
     },
     type: entry.type,
     name: entry.name,
-    coordinates: [entry['geo-length'], entry['geo-width']],
+    coordinates: [Number(entry['longitude']), Number(entry['latitude'])],
     openHoures: JSON.parse(entry['open-houres'])
   }
+}
+
+function filterPointsByCoordinates (pointsList, sourceLatitude, sourceLongitude) {
+  return pointsList.filter(point => {
+    const [longitude, latitude] = point.coordinates
+    if (sourceLatitude + SEARCH_RANGE > latitude)
+    return sourceLatitude + SEARCH_RANGE > latitude  && latitude > sourceLatitude - SEARCH_RANGE &&
+    sourceLongitude + SEARCH_RANGE > longitude  && latitude> sourceLongitude - SEARCH_RANGE
+  })
 }
 
 async function burnBabyBurn () {
@@ -52,13 +48,18 @@ async function burnBabyBurn () {
     if (mockData) {
       initServer()
       app.get('/points-list' ,(req, res) => {
-        res.send(mockData)
+        const longitude = req.param('longitude')
+        const latitude = req.param('latitude')
+        if (longitude && latitude) {
+          res.send(filterPointsByCoordinates(mockData, Number(latitude), Number(longitude)))
+        } else {
+          res.status(500).send('Invalid Params!')
+        }
       })
     }
   } catch (e) {
     console.log(e)
   }
-  
 }
 
 burnBabyBurn()
