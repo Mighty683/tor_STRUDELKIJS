@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
 import { Row, Col, Button, Typography, Icon } from 'antd';
 
 import './style.scss';
@@ -20,9 +21,11 @@ class Main extends Component {
             przesyłek <Icon type="smile" />
           </Title>
 
-          <Button className="main-page__button" type="primary">
-            <strong>Zaczynam!</strong>
-          </Button>
+          <Link to="/select-point">
+            <Button className="main-page__button" type="primary">
+              <strong>Zaczynam!</strong>
+            </Button>
+          </Link>
         </Col>
       </Row>
     );

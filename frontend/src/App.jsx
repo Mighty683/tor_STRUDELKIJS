@@ -26,7 +26,7 @@ class App extends Component {
           </Header>
           <Content>
             <Route path="/" exact component={Main} />
-            <Route path="/select-point" exact component={SelectPoint} />
+            <Route path="/select-point" component={SelectPoint} />
           </Content>
           <Footer style={{ textAlign: 'center' }}>
             <strong>Strudelki.js</strong> © 2019 Created with{' '}

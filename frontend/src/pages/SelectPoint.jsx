@@ -16,7 +16,7 @@ class Main extends Component {
     }
   }
   render() {
-    return <Map />;
+    return <div>test</div>;
   }
 }
 
