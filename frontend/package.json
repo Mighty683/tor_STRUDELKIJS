@@ -31,6 +31,10 @@
     }
   },
   "lint-staged": {
+    "public/**/*.{html,js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ],
     "src/**/*.{html,js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --single-quote --write",
       "git add"
