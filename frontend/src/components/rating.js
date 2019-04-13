@@ -2,25 +2,28 @@ import React, { Component } from 'react';
 
 class Rating extends Component {
   render() {
-    console.log(this.props.data);
+    console.log(this.props);
     return (
       <div>
-        <p>{this.props.data.type}</p>
-        <p>{this.props.data.name}</p>
+        <p>{this.props.data[0]}</p>
+        <p>{this.props.data[2]}</p>
         <p>
-          {this.props.data.address.city} {this.props.data.address.postalCode}{' '}
-          {this.props.data.address.street}
+          {this.props.data[1].city} {this.props.data[1].postalCode}{' '}
+          {this.props.data[1].street}
         </p>
 
         <p>Open hours:</p>
-        {this.props.data.openHours.map((day, i) => {
+        {this.props.data[5].map((day, i) => {
           return (
-            <p>
+            <p key={i}>
               {day.day}: {day.from} - {day.to}
             </p>
           );
         })}
-        {/*<p>{this.props.data.openHours[0].day}: {this.props.data.openHours[0].from} - {this.props.data.openHours[0].to}</p>*/}
+        <p>
+          {this.props.data[5].day}: {this.props.data[5].from} -{' '}
+          {this.props.data[5].to}
+        </p>
       </div>
     );
   }

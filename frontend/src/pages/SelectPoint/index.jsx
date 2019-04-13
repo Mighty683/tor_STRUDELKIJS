@@ -3,6 +3,7 @@ import Map from '../../components/map';
 import requests from '../../requests';
 import Star from '../../components/star';
 import { Spin, Card, Row, Col, Typography, Icon } from 'antd';
+import Rating from '../../components/rating';
 
 import './style.scss';
 
