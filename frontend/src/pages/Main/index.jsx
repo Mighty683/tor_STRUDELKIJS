@@ -15,7 +15,7 @@ class Main extends Component {
       <Row type="flex" justify="center" align="middle" className="main-page">
         <Col span={24} style={{ textAlign: 'center' }}>
           <img className="main-page__icon" src={mark} alt="Mark" />
-          <Title>Oceniator punktów 3000</Title>
+          <Title>Oceniator punktów 4000 🧠</Title>
           <Title level={3}>
             Narzędzie służące wyszukiwaniu oraz ocenianiu punktów odbioru
             przesyłek <Icon type="smile" />
