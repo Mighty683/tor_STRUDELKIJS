@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const defaultURL =
-  process.env.REACT_APP_URL_API || `http://${document.location.hostname}:1111`;
+const defaultURL = process.env.hostname || `http://192.168.137.1:1111`;
 
 export default {
   getPoints(latitude, longitude) {
