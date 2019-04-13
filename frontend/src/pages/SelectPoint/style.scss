@@ -45,6 +45,10 @@
 
       &--empty {
         margin-top: 30px;
+
+        @media (min-width: $break-xl) {
+          margin-top: 0;
+        }
       }
     }
 
@@ -57,7 +61,7 @@
 
       @media (min-width: $break-xl) {
         .ant-card {
-          height: calc(100vh - 69px - 64px - 60px - 90px);
+          min-height: calc(100vh - 69px - 64px - 60px - 90px);
         }
 
         margin-top: 0;

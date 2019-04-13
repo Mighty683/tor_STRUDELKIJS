@@ -51,44 +51,56 @@ class Send extends Component {
             Oceń punkt odbioru <Icon type="smile" />
           </Title>
         </div>
-        <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
-          <div className="gutter-box">
-            <Card
-              hoverable
-              title={
-                <strong>Szczegóły ocenianego punktu odbioru przesyłek</strong>
-              }
-              bordered
-            >
-              <Rating data={this.state.point} />
-            </Card>
-          </div>
-        </Col>
-        <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
-          <div className="gutter-box">
-            <div className="send__info-container">
-              <Star
-                overall={this.state.overall}
-                nieprzesuwable={true}
-                data={this.state.ratings}
-                onDataChange={this.onDataChange}
-              />
-            </div>
-          </div>
-        </Col>
-        <Col className="gutter-row" xs={24} md={24} lg={24} xl={24}>
-          <div className="gutter-box">
-            <div style={{ textAlign: 'center' }}>
-              <Button
-                onClick={this.showModal}
-                className="main-page__button"
-                type="primary"
+        <Row gutter={16}>
+          <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+            <div className="gutter-box">
+              <Card
+                hoverable
+                title={
+                  <strong>Szczegóły ocenianego punktu odbioru przesyłek</strong>
+                }
+                bordered
               >
-                <strong>Wyślij!</strong>
-              </Button>
+                <Rating data={this.state.point} />
+              </Card>
             </div>
-          </div>
-        </Col>
+          </Col>
+          <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+            <div className="gutter-box">
+              <Card
+                hoverable
+                title={
+                  <strong>
+                    Kliknij aby ocenić wybrany punkt odbioru przesyłki
+                  </strong>
+                }
+                bordered
+              >
+                <Star
+                  overall={this.state.overall}
+                  nieprzesuwable={true}
+                  data={this.state.ratings}
+                  onDataChange={this.onDataChange}
+                />
+              </Card>
+            </div>
+          </Col>
+        </Row>
+        <Row gutter={16}>
+          <Col className="gutter-row" xs={24} md={24} lg={24} xl={24}>
+            <div className="gutter-box">
+              <div style={{ textAlign: 'center' }}>
+                <Button
+                  onClick={this.showModal}
+                  className="main-page__button"
+                  type="primary"
+                >
+                  <strong>Wyślij</strong>
+                </Button>
+              </div>
+            </div>
+          </Col>
+        </Row>
 
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
