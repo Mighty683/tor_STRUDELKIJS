@@ -15,13 +15,19 @@ class Star extends Component {
   render() {
     return (
       <div>
-        <canvas ref={this.myRef} />
+        <canvas
+          ref={this.myRef}
+          style={{
+            maxWidth: '400px',
+            maxHeight: '400px'
+          }}
+        />
       </div>
     );
   }
 
   componentDidMount() {
-    const myRadarChart = new Chart(this.myRef.current, {
+    this.myRadarChart = new Chart(this.myRef.current, {
       type: 'radar',
       data: {
         labels: [SERVICE, AVAILABILITY, TIME_OF_RETRIVAL],
@@ -35,8 +41,23 @@ class Star extends Component {
         ]
       },
       options: {
-        scale: {
+        legend: {
           display: false
+        },
+        scale: {
+          display: true,
+          gridLines: {
+            display: false,
+            circular: false,
+            drawTicks: false,
+            lineWidth: 3
+          },
+          scaleLabel: {
+            display: true
+          },
+          ticks: {
+            display: false
+          }
         },
         dragData: this.props.draggable,
         dragDataRound: 0,
