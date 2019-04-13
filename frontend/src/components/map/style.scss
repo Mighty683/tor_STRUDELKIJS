@@ -1,20 +1,25 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
 .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 100%;
+
   &.green {
     background-color: #006600;
   }
+
   &.blue {
     background-color: #333399;
   }
+
   &.red {
     background-color: #cc0000;
   }
 }
+
 .map {
   height: calc((100vh - 69px - 64px - 60px) / 2);
   width: 100%;
@@ -55,8 +60,21 @@
       }
     }
 
+    &.selected {
+      img {
+        filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+
+        @include animation-pulse;
+
+        z-index: 100000;
+
+        height: 60px;
+      }
+    }
+
     img {
       height: 50px;
+      z-index: 1;
 
       &:hover {
         @include animation-pulse;

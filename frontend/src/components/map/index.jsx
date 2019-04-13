@@ -18,7 +18,7 @@ class Map extends Component {
       this.props.points &&
       this.props.points.map(point => (
         <MapMarker
-          className={
+          selectedClass={
             this.props.selectedPoint && this.props.selectedPoint.id === point.id
               ? 'selected'
               : ''
