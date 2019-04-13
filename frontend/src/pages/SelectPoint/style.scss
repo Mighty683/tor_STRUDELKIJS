@@ -27,6 +27,7 @@
       margin-bottom: 2rem;
       margin-top: 2rem;
       text-align: center;
+
       .ant-switch {
         color: $color-orange;
       }
@@ -38,8 +39,6 @@
       margin-top: 30px;
 
       @media (min-width: $break-xl) {
-        background: #ececec;
-        padding: 30px;
         margin-top: 0;
         min-height: calc(100vh - 69px - 64px - 60px);
       }
@@ -52,8 +51,24 @@
     &-column {
       margin-top: 30px;
 
-      @media (min-width: $break-xl) {
+      &:first-child {
         margin-top: 0;
+      }
+
+      @media (min-width: $break-xl) {
+        .ant-card {
+          min-height: calc(100vh - 69px - 64px - 60px - 80px);
+        }
+
+        margin-top: 0;
+      }
+    }
+
+    &-cta {
+      text-align: center;
+
+      @media (min-width: $break-xl) {
+        text-align: right;
       }
     }
   }

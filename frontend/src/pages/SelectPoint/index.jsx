@@ -117,7 +117,7 @@ class Main extends Component {
                   <div className="select-point__info-container">
                     <Row gutter={16}>
                       <Col
-                        className="gutter-row"
+                        className="gutter-row  select-point__info-column"
                         xs={24}
                         md={24}
                         lg={24}
@@ -169,19 +169,19 @@ class Main extends Component {
                           </Card>
                         </div>
                       </Col>
-                      <Row gutter={16}>
-                        <Col className="gutter-row" xs={24}>
-                          <div style={{ textAlign: 'center' }}>
-                            <Button
-                              onClick={this.showModal}
-                              className="main-page__button"
-                              type="primary"
-                            >
-                              <strong>Wybieram punkt!</strong>
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
+                    </Row>
+                    <Row gutter={16}>
+                      <Col className="gutter-row" xs={24}>
+                        <div className="select-point__info-cta">
+                          <Button
+                            onClick={this.showModal}
+                            className="main-page__button"
+                            type="primary"
+                          >
+                            <strong>Wybieram punkt!</strong>
+                          </Button>
+                        </div>
+                      </Col>
                     </Row>
                   </div>
                 ) : (
