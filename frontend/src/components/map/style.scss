@@ -3,6 +3,7 @@
 .map {
   height: calc((100vh - 69px - 64px) / 2);
   width: 100%;
+  overflow: hidden;
 
   &__marker {
     height: 10vh;
