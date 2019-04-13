@@ -27,25 +27,22 @@ class Star extends Component {
         labels: [SERVICE, AVAILABILITY, TIME_OF_RETRIVAL],
         datasets: [
           {
-            label: 'Data 2',
-            data: [20, 18, 15],
+            label: 'Ocena',
+            data: this.props.data,
             pointBackgroundColor: '#609ACF',
             pointHitRadius: 25
-          },
-          {
-            label: 'Data 1',
-            data: [5, 18, 15]
           }
         ]
       },
       options: {
         scale: {
-          display: true
+          display: false
         },
         dragData: this.props.draggable,
         dragDataRound: 0,
         onDragEnd: function(event, datasetIndex, index, value) {
-          console.log('elo');
+          this.props.onDataChange &&
+            this.props.onDataChange(event, datasetIndex, index, value);
         }
       }
     });

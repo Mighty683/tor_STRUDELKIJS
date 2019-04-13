@@ -2,33 +2,24 @@ import React, { Component } from 'react';
 import Map from '../../components/map';
 import requests from '../../requests';
 import Star from '../../components/star';
-import { Spin, List, Card } from 'antd';
+import { Spin } from 'antd';
 
 import './style.scss';
-
-const data = [
-  {
-    title: <strong>Szczegóły punktu odbioru</strong>,
-    content: <div>test</div>
-  },
-  {
-    title: <strong>Ocena punktu odbioru</strong>,
-    content: <Star />
-  }
-];
-
 class Main extends Component {
   constructor() {
     super();
     this.state = {
-      points: []
+      points: [],
+      selectedPoint: null
     };
 
     this.onPointSelect = this.onPointSelect.bind(this);
   }
 
   onPointSelect(id) {
-    console.log('Clicked', id);
+    this.setState({
+      selectedPoint: this.state.points.find(point => point.id === id)
+    });
   }
 
   async componentDidMount() {
@@ -54,19 +45,9 @@ class Main extends Component {
               points={this.state.points}
             />
             <div className="select-point__info-container">
-              <List
-                grid={{
-                  gutter: 16,
-                  xs: 1,
-                  sm: 2
-                }}
-                dataSource={data}
-                renderItem={item => (
-                  <List.Item>
-                    <Card title={item.title}>{item.content}</Card>
-                  </List.Item>
-                )}
-              />
+              {this.state.selectedPoint ? (
+                <Star data={Object.values(this.state.selectedPoint.ratings)} />
+              ) : null}
             </div>
           </div>
         ) : (
