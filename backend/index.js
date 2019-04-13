@@ -42,7 +42,7 @@ function filterPointsByCoordinates (pointsList, sourceLatitude, sourceLongitude)
     const [longitude, latitude] = point.coordinates
     if (sourceLatitude + SEARCH_RANGE > latitude)
     return sourceLatitude + SEARCH_RANGE > latitude  && latitude > sourceLatitude - SEARCH_RANGE &&
-    sourceLongitude + SEARCH_RANGE > longitude  && latitude> sourceLongitude - SEARCH_RANGE
+    sourceLongitude + (SEARCH_RANGE / 2) > longitude  && longitude > sourceLongitude - (SEARCH_RANGE / 2)
   })
 }
 
