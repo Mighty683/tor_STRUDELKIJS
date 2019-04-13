@@ -15,7 +15,7 @@ class Star extends Component {
   render() {
     return (
       <div>
-        <canvas ref={this.myRef} width="200" height="200" />
+        <canvas ref={this.myRef} />
       </div>
     );
   }
@@ -27,17 +27,23 @@ class Star extends Component {
         labels: [SERVICE, AVAILABILITY, TIME_OF_RETRIVAL],
         datasets: [
           {
-            label: 'Data 2',
             data: [20, 18, 15],
-            pointBackgroundColor: '#609ACF'
+            pointBackgroundColor: '#609ACF',
+            lineTension: 0
           },
           {
-            label: 'Data 1',
-            data: [5, 18, 15]
+            data: [5, 18, 15],
+            lineTension: 0
           }
         ]
       },
       options: {
+        elements: {
+          line: {
+            borderWidth: 0,
+            borderColor: 'red'
+          }
+        },
         scale: {
           // Hides the scale
           display: true
