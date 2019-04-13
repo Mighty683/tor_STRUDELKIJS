@@ -148,6 +148,7 @@ class Star extends Component {
   }
 
   componentDidMount() {
+    const that = this;
     this.myRadarChart = new Chart(this.myRef.current, {
       type: 'radar',
       data: {
@@ -198,8 +199,8 @@ class Star extends Component {
         dragData: !this.props.nieprzesuwable,
         dragDataRound: 0,
         onDragEnd: function(event, datasetIndex, index, value) {
-          this.props.onDataChange &&
-            this.props.onDataChange(event, datasetIndex, index, value);
+          that.props.onDataChange &&
+            that.props.onDataChange(event, datasetIndex, index, value);
         }
       }
     });

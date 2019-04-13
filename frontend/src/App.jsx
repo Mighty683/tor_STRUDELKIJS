@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Main from './pages/Main';
 import SelectPoint from './pages/SelectPoint';
+import Send from './pages/Send';
 
 import { Layout, Icon } from 'antd';
 
@@ -27,6 +28,7 @@ class App extends Component {
           <Content>
             <Route path="/" exact component={Main} />
             <Route path="/select-point" component={SelectPoint} />
+            <Route path="/send" component={Send} />
           </Content>
           <Footer style={{ textAlign: 'center' }}>
             <strong>Strudelki.js</strong> © 2019 Created with{' '}
