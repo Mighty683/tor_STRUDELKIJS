@@ -3,7 +3,7 @@ import Map from '../../components/map';
 import requests from '../../requests';
 import Star from '../../components/star';
 import { Spin } from 'antd';
-
+import Rating from '../../components/rating';
 import './style.scss';
 class Main extends Component {
   constructor() {
@@ -47,6 +47,11 @@ class Main extends Component {
             <div className="select-point__info-container">
               {this.state.selectedPoint ? (
                 <Star data={Object.values(this.state.selectedPoint.ratings)} />
+              ) : null}
+            </div>
+            <div className="select-point__info-container">
+              {this.state.selectedPoint ? (
+                <Rating data={Object.values(this.state.selectedPoint)} />
               ) : null}
             </div>
           </div>
