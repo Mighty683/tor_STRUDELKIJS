@@ -60,6 +60,13 @@ class Main extends Component {
         });
 
         return pD < pointDistance;
+      })
+      .sort((a, b) => {
+        if (a.overAllRating > b.overAllRating) {
+          return -1;
+        } else {
+          return 1;
+        }
       });
 
     if (betterPoints.length) {
@@ -238,7 +245,7 @@ class Main extends Component {
                         />
                         <Star
                           overall={this.state.betterPoint.overAllRating}
-                          key={this.state.betterPoint.id}
+                          key={`star${this.state.betterPoint.id}`}
                           data={Object.values(this.state.betterPoint.ratings)}
                           overallRating={this.state.betterPoint.overallRating}
                         />
