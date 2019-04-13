@@ -26,7 +26,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Star />
+        <Star data={'data'} nieprzesuwable={true} />
         {this.state.points.length && <Map points={this.state.points} />}
       </div>
     );
