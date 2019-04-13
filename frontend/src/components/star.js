@@ -12,11 +12,6 @@ import { Typography } from 'antd';
 const { Title } = Typography;
 
 class Star extends Component {
-  shouldComponentUpdate(props) {
-    this.updateChart(props);
-    return true;
-  }
-
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
@@ -27,6 +22,10 @@ class Star extends Component {
 
   componentWillUnmount() {
     this.myRadarChart.destroy();
+  }
+
+  componentDidUpdate() {
+    this.updateChart(this.props);
   }
 
   render() {
