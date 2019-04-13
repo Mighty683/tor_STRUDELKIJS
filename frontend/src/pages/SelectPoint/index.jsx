@@ -186,7 +186,14 @@ class Main extends Component {
               </Title>
               <div style={{ textAlign: 'center' }}>
                 <Button style={{ marginRight: '10px' }}>Innym razem</Button>
-                <Link to="/send">
+                <Link
+                  to={{
+                    pathname: '/send',
+                    state: {
+                      elo: this.state.selectedPoint
+                    }
+                  }}
+                >
                   <Button
                     className="ant-btn-primary"
                     style={{ marginLeft: '10px' }}
