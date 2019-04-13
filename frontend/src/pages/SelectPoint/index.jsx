@@ -112,7 +112,7 @@ class Main extends Component {
                           >
                             <Rating
                               key={this.state.selectedPoint.id}
-                              data={Object.values(this.state.selectedPoint)}
+                              data={this.state.selectedPoint}
                             />
                           </Card>
                         </div>

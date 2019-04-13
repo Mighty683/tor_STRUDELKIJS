@@ -27,7 +27,6 @@ class Index extends Component {
       default:
         parcelRealName = '';
     }
-
     return (
       <div>
         <img className="rating-image" src={parcelLogo} alt={parcelRealName} />
@@ -36,23 +35,19 @@ class Index extends Component {
         </p>
         <p>Adres:</p>
         <p>
-          ul. {this.props.data[1].street}
+          ul. {this.props.data.address.street}
           <br />
-          {this.props.data[1].postalCode} {this.props.data[1].city}
+          {this.props.data.address.postalCode} {this.props.data.address.city}
         </p>
 
         <p>Godziny otwarcia: </p>
-        {this.props.data[5].map((day, i) => {
+        {this.props.data.openHoures.map((day, i) => {
           return (
             <p key={i}>
               {day.day}: {day.from} - {day.to}
             </p>
           );
         })}
-        {/*<p>*/}
-        {/*  {this.props.data[5].day}: {this.props.data[5].from} -{' '}*/}
-        {/*  {this.props.data[5].to}*/}
-        {/*</p>*/}
       </div>
     );
   }
