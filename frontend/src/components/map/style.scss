@@ -7,14 +7,36 @@
   overflow: hidden;
 
   &__marker {
-    height: 10vw;
+    position: relative;
 
-    @media (min-width: $break-sm) {
-      height: 5vh;
+    &-tooltip {
+      display: none;
+      position: absolute;
+      top: -120px;
+      background-color: $color-white;
+      height: 100px;
+      width: 200px;
+      z-index: 10000;
+      border-radius: 10px;
+      box-shadow: 10px 10px 35px -20px rgba(0, 0, 0, 0.75);
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
-    &:hover {
-      @include animation-pulse;
+    &--visible-tooltip {
+      .map__marker-tooltip {
+        display: block;
+      }
+    }
+
+    img {
+      height: 50px;
+
+      &:hover {
+        @include animation-pulse;
+      }
     }
   }
 }
