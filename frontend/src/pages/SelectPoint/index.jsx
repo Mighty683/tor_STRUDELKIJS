@@ -79,6 +79,9 @@ class Main extends Component {
                               data={Object.values(
                                 this.state.selectedPoint.ratings
                               )}
+                              overallRating={
+                                this.state.selectedPoint.overallRating
+                              }
                             />
                           </Card>
                         </div>

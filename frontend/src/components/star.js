@@ -15,7 +15,18 @@ class Star extends Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
+    let gridGreen = 0;
+    let gridRed = 0;
+    if (props.overallRating > 5) {
+      gridGreen = 200 + 55 * ((props.overallRating - 5) / 5);
+    } else {
+      gridRed = 200 + 55 * ((5 - props.overallRating) / 5);
+    }
+
+    console.log(props.overallRating, gridGreen, gridRed);
+
     this.state = {
+      gridColor: `rgba(${gridRed}, ${gridGreen}, 0, 1)`,
       isMobile: window.innerWidth < 720
     };
   }
@@ -116,7 +127,7 @@ class Star extends Component {
           {
             pointHoverBackgroundColor: 'transparent',
             pointBorderColor: 'rgba(255, 90, 0, 1)',
-            backgroundColor: 'rgba(255, 90, 0, 1)',
+            backgroundColor: 'rgba(255, 90, 0, 0.6)',
             pointBackgroundColor: ['#006600', '#333399', '#cc0000'],
             data: this.props.data,
             pointHitRadius: 25,
@@ -141,6 +152,7 @@ class Star extends Component {
           },
           display: true,
           gridLines: {
+            color: this.state.gridColor,
             lineWidth: 3,
             circular: true
           },
@@ -152,7 +164,7 @@ class Star extends Component {
             maxTicksLimit: 2
           }
         },
-        dragData: this.props.nieprzesuwable,
+        dragData: !this.props.nieprzesuwable,
         dragDataRound: 0,
         onDragEnd: function(event, datasetIndex, index, value) {
           this.props.onDataChange &&
