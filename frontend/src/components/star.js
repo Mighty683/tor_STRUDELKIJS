@@ -7,6 +7,10 @@ import {
   TIME_OF_RETRIVAL
 } from '../common/criteria.enum';
 
+import { Typography } from 'antd';
+
+const { Title } = Typography;
+
 class Star extends Component {
   constructor(props) {
     super(props);
@@ -21,8 +25,69 @@ class Star extends Component {
   }
 
   render() {
+    const parcelOverall = this.props.overall;
+    let parcelOverallMarkup;
+
+    switch (Math.round(parcelOverall)) {
+      case 1:
+        parcelOverallMarkup = (
+          <span className="text-red">{parcelOverall} 😞 😞 😞</span>
+        );
+        break;
+      case 2:
+        parcelOverallMarkup = (
+          <span className="text-red">{parcelOverall} 😞 😞</span>
+        );
+        break;
+      case 3:
+        parcelOverallMarkup = (
+          <span className="text-red">{parcelOverall} 😞</span>
+        );
+        break;
+      case 4:
+        parcelOverallMarkup = (
+          <span className="text-orange">{parcelOverall} 😔 😔 😔</span>
+        );
+        break;
+      case 5:
+        parcelOverallMarkup = (
+          <span className="text-orange">{parcelOverall} 😔 😔</span>
+        );
+        break;
+      case 6:
+        parcelOverallMarkup = (
+          <span className="text-orange">{parcelOverall} 😔</span>
+        );
+        break;
+      case 7:
+        parcelOverallMarkup = (
+          <span className="text-green">{parcelOverall} 😁</span>
+        );
+        break;
+      case 8:
+        parcelOverallMarkup = (
+          <span className="text-green">{parcelOverall} 😁 😁</span>
+        );
+        break;
+      case 9:
+        parcelOverallMarkup = (
+          <span className="text-green">{parcelOverall} 😁 😁 😁</span>
+        );
+        break;
+      case 10:
+        parcelOverallMarkup = (
+          <span className="text-pink">{parcelOverall} ❤️</span>
+        );
+        break;
+      default:
+        parcelOverallMarkup = '';
+    }
+
     return (
       <div className={this.props.className}>
+        <Title level={3} style={{ marginBottom: '30px' }}>
+          Ogólna ocena: {parcelOverallMarkup}
+        </Title>
         <canvas ref={this.myRef} />
         {this.state.isMobile ? (
           <div className="legend">

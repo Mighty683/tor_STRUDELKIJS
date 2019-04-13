@@ -20,3 +20,21 @@
 
   @include animation-pulse;
 }
+
+.text {
+  &-red {
+    color: #d50000;
+  }
+
+  &-orange {
+    color: #ff8f00;
+  }
+
+  &-green {
+    color: #43a047;
+  }
+
+  &-pink {
+    color: #f50057;
+  }
+}

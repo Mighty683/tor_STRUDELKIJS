@@ -29,7 +29,7 @@ function mapData (entry, index) {
     name: entry.name,
     coordinates: [Number(entry['longitude']), Number(entry['latitude'])],
     openHoures: JSON.parse(entry['open-houres']),
-    overAllRating: 3 + Math.random() * 7,
+    overAllRating: (3 + Math.random() * 7).toFixed(2),
     ratings: {
       service: 2 + Math.random() * 2,
       availability: 2 + Math.random() * 2,

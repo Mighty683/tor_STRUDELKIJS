@@ -74,6 +74,7 @@ class Main extends Component {
                             bordered
                           >
                             <Star
+                              overall={this.state.selectedPoint.overAllRating}
                               key={this.state.selectedPoint.id}
                               data={Object.values(
                                 this.state.selectedPoint.ratings
