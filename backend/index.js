@@ -32,7 +32,7 @@ function mapData (entry, index) {
     name: entry.name,
     coordinates: [Number(entry['longitude']), Number(entry['latitude'])],
     openHoures: JSON.parse(entry['open-houres']),
-    overAllRating: (((sR + aR + STR) / 3) * 2).toFixed(2),
+    overAllRating: (((sR + aR + STR) / 3) * 2),
     ratings: {
       service: sR,
       availability: aR,

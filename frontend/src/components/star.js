@@ -65,7 +65,7 @@ class Star extends Component {
   }
 
   render() {
-    const parcelOverall = this.props.overall;
+    const parcelOverall = this.props.overall && this.props.overall.toFixed(2);
     let parcelOverallMarkup;
 
     switch (Math.round(parcelOverall)) {
