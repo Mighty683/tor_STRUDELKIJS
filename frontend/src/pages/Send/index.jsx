@@ -3,7 +3,8 @@ import Star from '../../components/star';
 import Rating from '../../components/rating';
 
 import './style.scss';
-import { Card, Col, Icon, Typography } from 'antd';
+import { Button, Card, Col, Icon, Modal, Row, Typography } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Title } = Typography;
 
@@ -14,6 +15,7 @@ class Send extends Component {
       points: [],
       selectedPoint: null,
       ratings: [0, 0, 0],
+      modalOpen: false,
       elo: {}
     };
   }
@@ -38,6 +40,12 @@ class Send extends Component {
       elo
     });
   }
+
+  showModal = () => {
+    this.setState(state => ({
+      modalOpen: !state.modalOpen
+    }));
+  };
 
   render() {
     const { elo } = this.props.location.state;
@@ -72,6 +80,37 @@ class Send extends Component {
             </div>
           </div>
         </Col>
+        <Col className="gutter-row" xs={24} md={24} lg={24} xl={24}>
+          <div className="gutter-box">
+            <div style={{ textAlign: 'center' }}>
+              <Button
+                onClick={this.showModal}
+                className="main-page__button"
+                type="primary"
+              >
+                <strong>Wyślij!</strong>
+              </Button>
+            </div>
+          </div>
+        </Col>
+
+        <Modal visible={this.state.modalOpen}>
+          <Title style={{ textAlign: 'center' }} level={1}>
+            <p>Dziękujemy!</p>
+            <Icon type="gift" theme="filled" />
+          </Title>
+          <div style={{ textAlign: 'center' }}>
+            <Link to="/select-point">
+              <Button
+                style={{ marginRight: '10px' }}
+                className="main-page__button"
+                type="primary"
+              >
+                <strong>Zakończ</strong>
+              </Button>
+            </Link>
+          </div>
+        </Modal>
       </div>
     );
   }
