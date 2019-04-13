@@ -9,11 +9,11 @@ import './style.scss';
 const data = [
   {
     title: <strong>Szczegóły punktu odbioru</strong>,
-    content: <Star />
+    content: <div>test</div>
   },
   {
     title: <strong>Ocena punktu odbioru</strong>,
-    content: <div>test2</div>
+    content: <Star />
   }
 ];
 

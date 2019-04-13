@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import MapMarker from './MapMarker';
 
+import './style.scss';
+
 class Map extends Component {
   static defaultProps = {
     center: {
-      lat: 52,
-      lng: 22
+      lat: 52.2,
+      lng: 21
     },
-    zoom: 11
+    zoom: 10
   };
 
   render() {
