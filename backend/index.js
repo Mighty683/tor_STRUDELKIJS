@@ -29,11 +29,11 @@ function mapData (entry, index) {
     name: entry.name,
     coordinates: [Number(entry['longitude']), Number(entry['latitude'])],
     openHoures: JSON.parse(entry['open-houres']),
-    overAllRating: Math.random * 10,
+    overAllRating: 3 + Math.random * 7,
     ratings: {
-      service: Math.random() * 5,
-      availability: Math.random() * 5,
-      serviceTime: Math.random() * 5,
+      service: 2 + Math.random() * 2,
+      availability: 2 + Math.random() * 2,
+      serviceTime: 2 + Math.random() * 2,
     }
   }
 }

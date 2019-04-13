@@ -71,7 +71,7 @@ class Star extends Component {
         scale: {
           pointLabels: {
             fontColor: 'black',
-            fontSize: 26,
+            fontSize: 16,
             display: !this.state.isMobile
           },
           display: true,
