@@ -14,9 +14,9 @@ class Send extends Component {
     this.state = {
       points: [],
       selectedPoint: null,
-      ratings: [0, 0, 0],
+      ratings: [1, 1, 1],
       modalOpen: false,
-      elo: {}
+      point: {}
     };
   }
 
@@ -28,16 +28,16 @@ class Send extends Component {
   };
 
   componentWillMount() {
-    const { elo } = this.props.location.state;
+    const { point } = this.props.location.state;
     this.setState({
-      elo
+      point
     });
   }
 
   componentDidMount() {
-    const { elo } = this.props.location.state;
+    const { point } = this.props.location.state;
     this.setState({
-      elo
+      point
     });
   }
 
@@ -48,8 +48,7 @@ class Send extends Component {
   };
 
   render() {
-    const { elo } = this.props.location.state;
-    console.log(elo);
+    const { point } = this.props.location.state;
 
     return (
       <div>
@@ -65,7 +64,7 @@ class Send extends Component {
               title={<strong>Szczegóły punktu odbioru przesyłek:</strong>}
               bordered
             >
-              <Rating data={this.state.elo} />
+              <Rating data={this.state.point} />
             </Card>
           </div>
         </Col>
@@ -97,6 +96,7 @@ class Send extends Component {
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
             <p>Dziękujemy!</p>
+
             <Icon type="gift" theme="filled" />
           </Title>
           <div style={{ textAlign: 'center' }}>
