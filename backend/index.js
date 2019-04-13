@@ -18,6 +18,9 @@ function initServer () {
 }
 
 function mapData (entry, index) {
+  const sR = 1 + Math.random() * 4
+  const aR = 1 + Math.random() * 4
+  const STR = 1 + Math.random() * 4
   return {
     id: index,
     address: {
@@ -29,11 +32,11 @@ function mapData (entry, index) {
     name: entry.name,
     coordinates: [Number(entry['longitude']), Number(entry['latitude'])],
     openHoures: JSON.parse(entry['open-houres']),
-    overAllRating: (2 + Math.random() * 8).toFixed(2),
+    overAllRating: (((sR + aR + STR) / 3) * 2).toFixed(2),
     ratings: {
-      service: 2 + Math.random() * 3,
-      availability: 2 + Math.random() * 3,
-      serviceTime: 2 + Math.random() * 3,
+      service: sR,
+      availability: aR,
+      serviceTime: STR
     }
   }
 }
