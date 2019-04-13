@@ -189,8 +189,10 @@ class Star extends Component {
             display: true
           },
           ticks: {
+            min: 0,
+            max: 5,
             display: false,
-            maxTicksLimit: 2
+            maxTicksLimit: 1
           }
         },
         dragData: !this.props.nieprzesuwable,
