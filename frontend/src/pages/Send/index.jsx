@@ -14,7 +14,7 @@ class Send extends Component {
     this.state = {
       points: [],
       selectedPoint: null,
-      ratings: [0, 0, 0],
+      ratings: [1, 1, 1],
       modalOpen: false,
       point: {}
     };
