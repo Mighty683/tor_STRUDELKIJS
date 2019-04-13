@@ -11,7 +11,6 @@ const { Title } = Typography;
 class Send extends Component {
   constructor(props) {
     super();
-
     this.state = {
       points: [],
       selectedPoint: null,
@@ -22,11 +21,23 @@ class Send extends Component {
   }
 
   onDataChange = (event, datasetIndex, index, value) => {
-    console.log(event);
-    console.log(datasetIndex);
-    console.log(index);
-    console.log(value);
+    this.setState(state => {
+      const ratings = state.ratings.map((item, j) => {
+        if (index === j) {
+          return value;
+        } else {
+          return item;
+        }
+      });
+      return {
+        ratings
+      };
+    });
   };
+
+  calculateOverall(ratings) {
+    return (((ratings[0] + ratings[1] + ratings[2]) / 3.0) * 2).toFixed(2);
+  }
 
   showModal = () => {
     this.setState(state => ({
@@ -59,7 +70,7 @@ class Send extends Component {
           <div className="gutter-box">
             <div className="send__info-container">
               <Star
-                nieprzesuwable={false}
+                nieprzesuwable={true}
                 data={this.state.ratings}
                 onDataChange={this.onDataChange}
               />
@@ -83,6 +94,7 @@ class Send extends Component {
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
             <p>Dziękujemy!</p>
+            <p>Twoja ocena to: {this.calculateOverall(this.state.ratings)}</p>
             <Icon type="gift" theme="filled" />
           </Title>
           <div style={{ textAlign: 'center' }}>
