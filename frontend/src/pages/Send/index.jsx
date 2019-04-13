@@ -14,7 +14,8 @@ class Send extends Component {
     this.state = {
       points: [],
       selectedPoint: null,
-      ratings: [1, 1, 1],
+      ratings: [3, 3, 3],
+      overall: 6,
       modalOpen: false,
       point: props.location.state && props.location.state.point
     };
@@ -30,14 +31,11 @@ class Send extends Component {
         }
       });
       return {
-        ratings
+        ratings,
+        overall: (ratings.reduce((a, r) => a + r, 0) / 3) * 2
       };
     });
   };
-
-  calculateOverall(ratings) {
-    return (((ratings[0] + ratings[1] + ratings[2]) / 3.0) * 2).toFixed(2);
-  }
 
   showModal = () => {
     this.setState(state => ({
@@ -70,6 +68,7 @@ class Send extends Component {
           <div className="gutter-box">
             <div className="send__info-container">
               <Star
+                overall={this.state.overall}
                 nieprzesuwable={true}
                 data={this.state.ratings}
                 onDataChange={this.onDataChange}
@@ -94,7 +93,7 @@ class Send extends Component {
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
             <p>Dziękujemy!</p>
-            <p>Twoja ocena to: {this.calculateOverall(this.state.ratings)}</p>
+            <p>Twoja ocena to: {this.state.overall}</p>
             <Icon type="gift" theme="filled" />
           </Title>
           <div style={{ textAlign: 'center' }}>
