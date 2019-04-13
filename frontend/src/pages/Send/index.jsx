@@ -9,14 +9,15 @@ import { Link } from 'react-router-dom';
 const { Title } = Typography;
 
 class Send extends Component {
-  constructor() {
+  constructor(props) {
     super();
+
     this.state = {
       points: [],
       selectedPoint: null,
       ratings: [1, 1, 1],
       modalOpen: false,
-      point: {}
+      point: props.location.state && props.location.state.point
     };
   }
 
@@ -26,20 +27,6 @@ class Send extends Component {
     console.log(index);
     console.log(value);
   };
-
-  componentWillMount() {
-    const { point } = this.props.location.state;
-    this.setState({
-      point
-    });
-  }
-
-  componentDidMount() {
-    const { point } = this.props.location.state;
-    this.setState({
-      point
-    });
-  }
 
   showModal = () => {
     this.setState(state => ({

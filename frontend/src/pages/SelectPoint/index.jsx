@@ -23,6 +23,7 @@ class Main extends Component {
     this.state = {
       points: [],
       selectedPoint: null,
+      betterPoint: null,
       modalOpen: false
     };
 
@@ -80,9 +81,20 @@ class Main extends Component {
   }
 
   showModal = () => {
-    this.setState(state => ({
-      modalOpen: !state.modalOpen
-    }));
+    const betterPoint = this.findBetterPoint(this.state.selectedPoint);
+    if (betterPoint) {
+      this.setState(state => ({
+        modalOpen: !state.modalOpen,
+        betterPoint
+      }));
+    } else {
+      this.props.history.push({
+        pathname: '/send',
+        state: {
+          point: this.state.selectedPoint
+        }
+      });
+    }
   };
 
   render() {
@@ -199,42 +211,36 @@ class Main extends Component {
                     <div className="gutter-box">
                       <p>Aktualnie wybrany punkt:</p>
                       <Rating
-                        key={this.state.selectedPoint.id}
+                        key={`modal${this.state.selectedPoint.id}`}
                         data={this.state.selectedPoint}
                       />
                       <Star
                         overall={this.state.selectedPoint.overAllRating}
-                        key={this.state.selectedPoint.id}
+                        key={`modalStar${this.state.selectedPoint.id}`}
                         data={Object.values(this.state.selectedPoint.ratings)}
                         overallRating={this.state.selectedPoint.overallRating}
                       />
                     </div>
                   </Col>
-                  <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
-                    <div className="gutter-box">
-                      <p>
-                        <strong>Punkt odbioru położony bliżej Ciebie:</strong>
-                      </p>
-                      <Rating
-                        key={this.findBetterPoint(this.state.selectedPoint).id}
-                        data={this.findBetterPoint(this.state.selectedPoint)}
-                      />
-                      <Star
-                        overall={
-                          this.findBetterPoint(this.state.selectedPoint)
-                            .overAllRating
-                        }
-                        key={this.findBetterPoint(this.state.selectedPoint).id}
-                        data={Object.values(
-                          this.findBetterPoint(this.state.selectedPoint).ratings
-                        )}
-                        overallRating={
-                          this.findBetterPoint(this.state.selectedPoint)
-                            .overallRating
-                        }
-                      />
-                    </div>
-                  </Col>
+                  {this.state.betterPoint ? (
+                    <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+                      <div className="gutter-box">
+                        <p>
+                          <strong>Punkt odbioru położony bliżej:</strong>
+                        </p>
+                        <Rating
+                          key={this.state.betterPoint.id}
+                          data={this.state.betterPoint}
+                        />
+                        <Star
+                          overall={this.state.betterPoint.overAllRating}
+                          key={this.state.betterPoint.id}
+                          data={Object.values(this.state.betterPoint.ratings)}
+                          overallRating={this.state.betterPoint.overallRating}
+                        />
+                      </div>
+                    </Col>
+                  ) : null}
                 </Row>
                 <div>
                   <Link
