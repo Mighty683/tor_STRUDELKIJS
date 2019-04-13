@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Map from '../../components/map';
 import requests from '../../requests';
 import Star from '../../components/star';
-import { Spin } from 'antd';
+import { Spin, Card, Row, Col } from 'antd';
 
 import './style.scss';
+
 class Main extends Component {
   constructor() {
     super();
@@ -46,10 +47,39 @@ class Main extends Component {
             />
             <div className="select-point__info-container">
               {this.state.selectedPoint ? (
-                <Star
-                  key={this.state.selectedPoint.id}
-                  data={Object.values(this.state.selectedPoint.ratings)}
-                />
+                <div style={{ background: '#ECECEC', padding: '30px' }}>
+                  <Row gutter={16}>
+                    <Col className="gutter-row" xs={24} md={12}>
+                      <div className="gutter-box">
+                        <Card
+                          hoverable
+                          title={
+                            <strong>Szczegóły punktu odbioru przesyłek:</strong>
+                          }
+                          bordered
+                        />
+                      </div>
+                    </Col>
+                    <Col className="gutter-row" xs={24} md={12}>
+                      <div className="gutter-box">
+                        <Card
+                          hoverable
+                          title={
+                            <strong>Ocena punktu odbioru przesyłek:</strong>
+                          }
+                          bordered
+                        >
+                          <Star
+                            key={this.state.selectedPoint.id}
+                            data={Object.values(
+                              this.state.selectedPoint.ratings
+                            )}
+                          />
+                        </Card>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
               ) : null}
             </div>
           </div>
