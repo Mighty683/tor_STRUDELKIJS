@@ -38,9 +38,11 @@ class Star extends Component {
         labels: [SERVICE, AVAILABILITY, TIME_OF_RETRIVAL],
         datasets: [
           {
-            label: 'Ocena',
+            pointHoverBackgroundColor: 'transparent',
+            pointBackgroundColor: 'rgba(255, 90, 0, 1)',
+            pointBorderColor: 'rgba(255, 90, 0, 1)',
+            backgroundColor: 'rgba(255, 90, 0, 1)',
             data: this.props.data,
-            pointBackgroundColor: '#609ACF',
             pointHitRadius: 25
           }
         ]
@@ -50,18 +52,19 @@ class Star extends Component {
           display: false
         },
         scale: {
+          pointLabels: {
+            fontSize: 20
+          },
           display: true,
           gridLines: {
-            display: false,
-            circular: false,
-            drawTicks: false,
             lineWidth: 3
           },
           scaleLabel: {
             display: true
           },
           ticks: {
-            display: false
+            display: false,
+            maxTicksLimit: 2
           }
         },
         dragData: this.props.draggable,
