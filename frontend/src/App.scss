@@ -65,7 +65,8 @@
 .ant-modal {
   width: 90vw !important;
 
-  img {
+  img,
+  .rating-image-container {
     display: none;
   }
 
@@ -88,6 +89,10 @@
 
     img {
       display: inline-block;
+    }
+
+    .rating-image-container {
+      display: block;
     }
 
     width: 50vw !important;

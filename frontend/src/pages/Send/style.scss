@@ -5,6 +5,24 @@
   padding: 30px;
   position: relative;
 
+  .ant-card {
+    @media (min-width: $break-xl) {
+      min-height: calc(100vh - 69px - 64px - 62px - 90px - 60px);
+    }
+  }
+
+  .ant-row:nth-child(2) {
+    min-height: calc(100vh - 69px - 64px - 62px - 90px - 60px);
+
+    .ant-col:last-child {
+      margin-top: 30px;
+
+      @media (min-width: $break-xl) {
+        margin-top: 0;
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 30px;
   }
