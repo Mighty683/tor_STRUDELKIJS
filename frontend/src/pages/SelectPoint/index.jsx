@@ -5,6 +5,8 @@ import Star from '../../components/star';
 import { Spin, Card, Row, Col, Typography, Icon, Button, Modal } from 'antd';
 import Rating from '../../components/rating';
 
+import { Link } from 'react-router-dom';
+
 import './style.scss';
 
 const { Title } = Typography;
@@ -141,16 +143,21 @@ class Main extends Component {
                 )}
               </div>
             </Col>
-            <Modal
-              visible={this.state.modalOpen}
-              onOk={() => {}}
-              onCancel={() => {}}
-              okText="Zgadzam się!"
-              cancelText="Innym razem"
-            >
+            <Modal visible={this.state.modalOpen}>
               <Title style={{ textAlign: 'center' }} level={1}>
                 <Icon type="gift" theme="filled" />
               </Title>
+              <div style={{ textAlign: 'center' }}>
+                <Button style={{ marginRight: '10px' }}>Innym razem</Button>
+                <Link to="/send">
+                  <Button
+                    className="ant-btn-primary"
+                    style={{ marginLeft: '10px' }}
+                  >
+                    Zgadzam się!
+                  </Button>
+                </Link>
+              </div>
             </Modal>
           </Row>
         ) : (
