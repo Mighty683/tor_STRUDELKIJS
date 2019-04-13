@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
+import './style.scss';
+
 const MapMarker = ({ point }) => <div>{point.name}</div>;
 
 class Map extends Component {
@@ -14,7 +16,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div className="map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY }}
           defaultCenter={this.props.center}

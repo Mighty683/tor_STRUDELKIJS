@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Map from '../components/map';
-import requests from '../requests';
-import Star from '../components/star';
+import Map from '../../components/map';
+import requests from '../../requests';
+import Star from '../../components/star';
+import { Spin } from 'antd';
+
+import './style.scss';
 
 class Main extends Component {
   constructor() {
@@ -23,11 +26,17 @@ class Main extends Component {
       console.log(e);
     }
   }
+
   render() {
     return (
-      <div>
-        <Star />
-        {this.state.points.length && <Map points={this.state.points} />}
+      <div className="select-point">
+        {this.state.points.length ? (
+          <Map points={this.state.points} />
+        ) : (
+          <div className="select-point__spinner-container">
+            <Spin size="large" tip="Ładowanie..." />
+          </div>
+        )}
       </div>
     );
   }

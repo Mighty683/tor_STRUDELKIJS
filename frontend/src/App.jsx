@@ -35,7 +35,8 @@ class App extends Component {
               className="icon-footer"
               theme="twoTone"
               twoToneColor="#eb2f96"
-            />
+            />{' '}
+            on Allegro BrainCode 2019 Toruń
           </Footer>
         </Layout>
       </Router>

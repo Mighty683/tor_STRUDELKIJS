@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.select-point {
+  min-height: calc(100vh - 69px - 64px);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+
+  &__spinner {
+    &-container {
+      text-align: center;
+
+      .ant-spin {
+        color: $color-black;
+
+        .ant-spin-dot-item {
+          background-color: $color-orange;
+        }
+      }
+    }
+  }
+}
