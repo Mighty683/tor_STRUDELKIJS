@@ -40,14 +40,18 @@ class Index extends Component {
           {this.props.data.address.postalCode} {this.props.data.address.city}
         </p>
 
-        <p>Godziny otwarcia: </p>
-        {this.props.data.openHoures.map((day, i) => {
-          return (
-            <p key={i}>
-              {day.day}: {day.from} - {day.to}
-            </p>
-          );
-        })}
+        {this.props.hours && (
+          <div>
+            <p>Godziny otwarcia: </p>
+            {this.props.data.openHoures.map((day, i) => {
+              return (
+                <p key={i}>
+                  {day.day}: {day.from} - {day.to}
+                </p>
+              );
+            })}
+          </div>
+        )}
       </div>
     );
   }

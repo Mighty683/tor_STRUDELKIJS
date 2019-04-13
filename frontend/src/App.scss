@@ -53,3 +53,11 @@
     color: #f50057;
   }
 }
+
+.anticon-gift {
+  @include animation-dance;
+
+  path {
+    fill: goldenrod;
+  }
+}

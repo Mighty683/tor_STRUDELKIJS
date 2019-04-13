@@ -12,4 +12,29 @@
       transform: scale(1.4);
     }
   }
+
+  @keyframes dance {
+    from {
+      transform: rotate(30deg);
+    }
+    to {
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+@mixin animation-dance() {
+  animation-duration: 0.7s;
+  animation-name: dance;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  @keyframes dance {
+    from {
+      transform: rotate(30deg);
+    }
+    to {
+      transform: rotate(-30deg);
+    }
+  }
 }

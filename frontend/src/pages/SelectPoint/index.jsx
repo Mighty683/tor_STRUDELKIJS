@@ -115,6 +115,7 @@ class Main extends Component {
                             <Rating
                               key={this.state.selectedPoint.id}
                               data={this.state.selectedPoint}
+                              hours
                             />
                           </Card>
                         </div>
@@ -143,22 +144,35 @@ class Main extends Component {
                 )}
               </div>
             </Col>
-            <Modal visible={this.state.modalOpen}>
-              <Title style={{ textAlign: 'center' }} level={1}>
-                <Icon type="gift" theme="filled" />
-              </Title>
-              <div style={{ textAlign: 'center' }}>
-                <Button style={{ marginRight: '10px' }}>Innym razem</Button>
-                <Link to="/send">
-                  <Button
-                    className="ant-btn-primary"
-                    style={{ marginLeft: '10px' }}
-                  >
-                    Zgadzam się!
-                  </Button>
-                </Link>
-              </div>
-            </Modal>
+            {this.state.selectedPoint ? (
+              <Modal
+                style={{ textAlign: 'center' }}
+                visible={this.state.modalOpen}
+              >
+                <Title level={1}>
+                  <Icon type="gift" theme="filled" />
+                </Title>
+                <Title level={4}>
+                  Nasz system znalazł świetny punkt odbioru bliżej Ciebie!
+                </Title>
+                <p>Aktualnie wybrany punkt:</p>
+                <Rating
+                  key={this.state.selectedPoint.id}
+                  data={this.state.selectedPoint}
+                />
+                <div>
+                  <Button style={{ marginRight: '10px' }}>Innym razem</Button>
+                  <Link to="/send">
+                    <Button
+                      className="ant-btn-primary"
+                      style={{ marginLeft: '10px' }}
+                    >
+                      Zgadzam się!
+                    </Button>
+                  </Link>
+                </div>
+              </Modal>
+            ) : null}
           </Row>
         ) : (
           <div className="select-point__spinner-container">
