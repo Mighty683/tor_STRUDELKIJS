@@ -21,11 +21,25 @@ class Send extends Component {
   }
 
   onDataChange = (event, datasetIndex, index, value) => {
-    console.log(event);
-    console.log(datasetIndex);
-    console.log(index);
-    console.log(value);
+    this.setState(state => {
+      const ratings = state.ratings.map((item, j) => {
+        if (index === j) {
+          return value;
+        } else {
+          return item;
+        }
+      });
+      return {
+        ratings
+      };
+    });
   };
+
+  calculateOverall(ratings) {
+    return Math.round(((ratings[0] + ratings[1] + ratings[2]) / 3) * 2).toFixed(
+      2
+    );
+  }
 
   componentWillMount() {
     const { point } = this.props.location.state;
@@ -70,7 +84,7 @@ class Send extends Component {
           <div className="gutter-box">
             <div className="send__info-container">
               <Star
-                nieprzesuwable={false}
+                nieprzesuwable={true}
                 data={this.state.ratings}
                 onDataChange={this.onDataChange}
               />
@@ -94,6 +108,7 @@ class Send extends Component {
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
             <p>Dziękujemy!</p>
+            <p>Twoja ocena to: {this.calculateOverall(this.state.ratings)}</p>
             <Icon type="gift" theme="filled" />
           </Title>
           <div style={{ textAlign: 'center' }}>
