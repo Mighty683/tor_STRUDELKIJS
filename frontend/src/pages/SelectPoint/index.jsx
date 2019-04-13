@@ -60,7 +60,12 @@ class Main extends Component {
                             <strong>Szczegóły punktu odbioru przesyłek:</strong>
                           }
                           bordered
-                        />
+                        >
+                          <Rating
+                            key={this.state.selectedPoint.id}
+                            data={Object.values(this.state.selectedPoint)}
+                          />
+                        </Card>
                       </div>
                     </Col>
                     <Col className="gutter-row" xs={24} md={12}>
