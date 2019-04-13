@@ -152,6 +152,7 @@ class Star extends Component {
         }
       },
       dragData: props.nieprzesuwable,
+      animation: !props.nieprzesuwable,
       dragDataRound: 0,
       onDragEnd: function(event, datasetIndex, index, value) {
         if (value >= 1) {
