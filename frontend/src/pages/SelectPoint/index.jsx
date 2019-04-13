@@ -69,7 +69,7 @@ class Main extends Component {
                           <Card
                             hoverable
                             title={
-                              <strong>Ocena punktu odbioru przesyłek:</strong>
+                              <strong>Ocena punktu odbioru przesyłek</strong>
                             }
                             bordered
                           >
@@ -98,7 +98,7 @@ class Main extends Component {
                             hoverable
                             title={
                               <strong>
-                                Szczegóły punktu odbioru przesyłek:
+                                Szczegóły punktu odbioru przesyłek
                               </strong>
                             }
                             bordered
