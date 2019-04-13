@@ -63,6 +63,30 @@ class Main extends Component {
                         xs={24}
                         md={24}
                         lg={24}
+                        xl={14}
+                      >
+                        <div className="gutter-box">
+                          <Card
+                            hoverable
+                            title={
+                              <strong>Ocena punktu odbioru przesyłek:</strong>
+                            }
+                            bordered
+                          >
+                            <Star
+                              key={this.state.selectedPoint.id}
+                              data={Object.values(
+                                this.state.selectedPoint.ratings
+                              )}
+                            />
+                          </Card>
+                        </div>
+                      </Col>
+                      <Col
+                        className="gutter-row select-point__info-column"
+                        xs={24}
+                        md={24}
+                        lg={24}
                         xl={10}
                       >
                         <div className="gutter-box">
@@ -78,30 +102,6 @@ class Main extends Component {
                             <Rating
                               key={this.state.selectedPoint.id}
                               data={Object.values(this.state.selectedPoint)}
-                            />
-                          </Card>
-                        </div>
-                      </Col>
-                      <Col
-                        className="gutter-row select-point__info-column"
-                        xs={24}
-                        md={24}
-                        lg={24}
-                        xl={14}
-                      >
-                        <div className="gutter-box">
-                          <Card
-                            hoverable
-                            title={
-                              <strong>Oceny punktu odbioru przesyłek:</strong>
-                            }
-                            bordered
-                          >
-                            <Star
-                              key={this.state.selectedPoint.id}
-                              data={Object.values(
-                                this.state.selectedPoint.ratings
-                              )}
                             />
                           </Card>
                         </div>
