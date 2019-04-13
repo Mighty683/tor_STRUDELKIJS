@@ -11,6 +11,9 @@ class Star extends Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
+    this.state = {
+      isMobile: window.innerWidth < 720
+    };
   }
 
   componentWillUnmount() {
@@ -19,8 +22,20 @@ class Star extends Component {
 
   render() {
     return (
-      <div>
+      <div className={this.props.className}>
         <canvas ref={this.myRef} />
+        <div className="legend">
+          Legenda:
+          <p>
+            <div className="dot green" /> - {SERVICE}
+          </p>
+          <p>
+            <div className="dot blue" /> - {AVAILABILITY}
+          </p>
+          <p>
+            <div className="dot red" /> - {TIME_OF_RETRIVAL}
+          </p>
+        </div>
       </div>
     );
   }
@@ -33,22 +48,25 @@ class Star extends Component {
         datasets: [
           {
             pointHoverBackgroundColor: 'transparent',
-            pointBackgroundColor: 'rgba(255, 90, 0, 1)',
             pointBorderColor: 'rgba(255, 90, 0, 1)',
             backgroundColor: 'rgba(255, 90, 0, 1)',
+            pointBackgroundColor: ['#006600', '#333399', '#cc0000'],
             data: this.props.data,
-            pointHitRadius: 25
+            pointHitRadius: 25,
+            pointRadius: 5
           }
         ]
       },
       options: {
+        aspectRatio: 1,
+        maintainAspectRatio: true,
         legend: {
           display: false
         },
         scale: {
           pointLabels: {
             fontColor: 'black',
-            fontSize: 20
+            display: !this.state.isMobile
           },
           display: true,
           gridLines: {
