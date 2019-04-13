@@ -15,18 +15,47 @@ class Star extends Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
-    let gridGreen = 0;
-    let gridRed = 0;
-    if (props.overallRating > 5) {
-      gridGreen = 200 + 55 * ((props.overallRating - 5) / 5);
-    } else {
-      gridRed = 200 + 55 * ((5 - props.overallRating) / 5);
+
+    const parcelOverallReal = props.overall;
+    let parcelOverallColor;
+
+    switch (Math.round(parcelOverallReal)) {
+      case 1:
+        parcelOverallColor = '#d50000';
+        break;
+      case 2:
+        parcelOverallColor = '#d50000';
+        break;
+      case 3:
+        parcelOverallColor = '#d50000';
+        break;
+      case 4:
+        parcelOverallColor = '#ff8f00';
+        break;
+      case 5:
+        parcelOverallColor = '#ff8f00';
+        break;
+      case 6:
+        parcelOverallColor = '#ff8f00';
+        break;
+      case 7:
+        parcelOverallColor = '#43a047';
+        break;
+      case 8:
+        parcelOverallColor = '#43a047';
+        break;
+      case 9:
+        parcelOverallColor = '#43a047';
+        break;
+      case 10:
+        parcelOverallColor = '#f50057';
+        break;
+      default:
+        parcelOverallColor = '';
     }
 
-    console.log(props.overallRating, gridGreen, gridRed);
-
     this.state = {
-      gridColor: `rgba(${gridRed}, ${gridGreen}, 0, 1)`,
+      gridColor: parcelOverallColor,
       isMobile: window.innerWidth < 720
     };
   }
