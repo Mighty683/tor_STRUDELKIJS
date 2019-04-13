@@ -53,11 +53,13 @@ class Star extends Component {
         },
         scale: {
           pointLabels: {
+            fontColor: 'black',
             fontSize: 20
           },
           display: true,
           gridLines: {
-            lineWidth: 3
+            lineWidth: 3,
+            circular: true
           },
           scaleLabel: {
             display: true
