@@ -7,7 +7,7 @@ import './style.scss';
 class Map extends Component {
   static defaultProps = {
     center: {
-      lat: 52.2,
+      lat: 52.215,
       lng: 21
     },
     zoom: 11

@@ -30,10 +30,14 @@ class Index extends Component {
     return (
       <div>
         <img className="rating-image" src={parcelLogo} alt={parcelRealName} />
+        <h2>
+          <strong>
+            {parcelRealName} (nr {this.props.data.id})
+          </strong>
+        </h2>
         <p>
-          <strong>{parcelRealName}</strong>
+          <strong>Adres:</strong>
         </p>
-        <p>Adres:</p>
         <p>
           ul. {this.props.data.address.street}
           <br />
@@ -42,7 +46,9 @@ class Index extends Component {
 
         {this.props.hours && (
           <div>
-            <p>Godziny otwarcia: </p>
+            <p>
+              <strong>Godziny otwarcia:</strong>
+            </p>
             {this.props.data.openHoures.map((day, i) => {
               return (
                 <p key={i}>
