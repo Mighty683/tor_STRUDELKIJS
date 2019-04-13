@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Main from './pages/Main';
-import SelectPoint from './pages/SelectPoint';
+import SelectPoint from './pages/SelectPoint/index';
 
 import { Layout, Icon } from 'antd';
 

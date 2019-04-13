@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-
-import './style.scss';
-
-const MapMarker = ({ point }) => <div>{point.name}</div>;
+import MapMarker from './MapMarker';
 
 class Map extends Component {
   static defaultProps = {
@@ -15,6 +12,18 @@ class Map extends Component {
   };
 
   render() {
+    const Markers =
+      this.props.points &&
+      this.props.points.map(point => (
+        <MapMarker
+          key={point.id}
+          lat={point.coordinates[1]}
+          lng={point.coordinates[0]}
+          point={point}
+          onClick={() => this.props.onPointSelect(point.id)}
+        />
+      ));
+
     return (
       <div className="map">
         <GoogleMapReact
@@ -22,14 +31,7 @@ class Map extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          {this.props.points.map(point => (
-            <MapMarker
-              key={point.id}
-              lat={point.coordinates[0]}
-              lng={point.coordinates[1]}
-              point={point}
-            />
-          ))}
+          {Markers}
         </GoogleMapReact>
       </div>
     );

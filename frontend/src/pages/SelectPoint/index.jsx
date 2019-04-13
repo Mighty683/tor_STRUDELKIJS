@@ -23,6 +23,12 @@ class Main extends Component {
     this.state = {
       points: []
     };
+
+    this.onPointSelect = this.onPointSelect.bind(this);
+  }
+
+  onPointSelect(id) {
+    console.log('Clicked', id);
   }
 
   async componentDidMount() {
@@ -43,7 +49,10 @@ class Main extends Component {
       <div className="select-point">
         {this.state.points.length ? (
           <div>
-            <Map points={this.state.points} />
+            <Map
+              onPointSelect={this.onPointSelect}
+              points={this.state.points}
+            />
             <div className="select-point__info-container">
               <List
                 grid={{
