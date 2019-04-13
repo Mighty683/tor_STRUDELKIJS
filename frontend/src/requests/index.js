@@ -6,8 +6,8 @@ export default {
   getPoints(latitude, longitude) {
     return axios.get(`${defaultURL}/points-list`, {
       params: {
-        longitude,
-        latitude
+        latitude,
+        longitude
       }
     });
   }

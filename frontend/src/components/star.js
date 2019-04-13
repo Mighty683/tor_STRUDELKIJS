@@ -29,7 +29,8 @@ class Star extends Component {
           {
             label: 'Data 2',
             data: [20, 18, 15],
-            pointBackgroundColor: '#609ACF'
+            pointBackgroundColor: '#609ACF',
+            pointHitRadius: 25
           },
           {
             label: 'Data 1',
@@ -39,10 +40,9 @@ class Star extends Component {
       },
       options: {
         scale: {
-          // Hides the scale
           display: true
         },
-        dragData: true,
+        dragData: this.props.draggable,
         dragDataRound: 0,
         onDragEnd: function(event, datasetIndex, index, value) {
           console.log('elo');
