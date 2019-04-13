@@ -29,6 +29,8 @@ class Main extends Component {
 
     this.onPointSelect = this.onPointSelect.bind(this);
     this.findBetterPoint = this.findBetterPoint.bind(this);
+
+    window.scrollTo(0, 0);
   }
 
   onPointSelect(id) {
