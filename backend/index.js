@@ -12,8 +12,8 @@ function initServer () {
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization')
     next()
   })
-  app.listen(1111, function () {
-    console.log('Listening 1111 port')
+  app.listen(80, function () {
+    console.log('Listening 80 port')
   })
 }
 
