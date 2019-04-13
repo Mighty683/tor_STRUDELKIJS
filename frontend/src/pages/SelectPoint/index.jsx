@@ -162,7 +162,7 @@ class Main extends Component {
                             bordered
                           >
                             <Rating
-                              key={this.state.selectedPoint.id}
+                              key={`mainRating${this.state.selectedPoint.id}`}
                               data={this.state.selectedPoint}
                               hours
                             />
