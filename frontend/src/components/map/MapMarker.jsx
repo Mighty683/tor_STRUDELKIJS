@@ -26,7 +26,6 @@ class MapMarker extends Component {
     const { onClick, point } = this.props;
 
     let logo = null;
-
     if (point.type === INPOST) {
       logo = InpostLogo;
     } else if (point.type === POLIST_POST) {
