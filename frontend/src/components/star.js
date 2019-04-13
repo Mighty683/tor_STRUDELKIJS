@@ -12,6 +12,11 @@ class Star extends Component {
     super(props);
     this.myRef = React.createRef();
   }
+
+  componentWillUnmount() {
+    this.myRadarChart.destroy();
+  }
+
   render() {
     return (
       <div>

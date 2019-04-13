@@ -46,7 +46,10 @@ class Main extends Component {
             />
             <div className="select-point__info-container">
               {this.state.selectedPoint ? (
-                <Star data={Object.values(this.state.selectedPoint.ratings)} />
+                <Star
+                  key={this.state.selectedPoint.id}
+                  data={Object.values(this.state.selectedPoint.ratings)}
+                />
               ) : null}
             </div>
           </div>
