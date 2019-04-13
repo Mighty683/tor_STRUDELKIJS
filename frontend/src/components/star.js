@@ -20,13 +20,7 @@ class Star extends Component {
   render() {
     return (
       <div>
-        <canvas
-          ref={this.myRef}
-          style={{
-            maxWidth: '400px',
-            maxHeight: '400px'
-          }}
-        />
+        <canvas ref={this.myRef} />
       </div>
     );
   }
