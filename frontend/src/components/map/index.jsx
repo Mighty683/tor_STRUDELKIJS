@@ -18,6 +18,11 @@ class Map extends Component {
       this.props.points &&
       this.props.points.map(point => (
         <MapMarker
+          className={
+            this.props.selectedPoint && this.props.selectedPoint.id === point.id
+              ? 'selected'
+              : ''
+          }
           key={point.id}
           lat={point.coordinates[1]}
           lng={point.coordinates[0]}

@@ -47,6 +47,7 @@ class Main extends Component {
             <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
               <div className="gutter-box">
                 <Map
+                  selectedPoint={this.state.selectedPoint}
                   onPointSelect={this.onPointSelect}
                   points={this.state.points}
                 />
