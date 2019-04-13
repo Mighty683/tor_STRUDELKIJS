@@ -7,11 +7,17 @@ import Rating from '../../components/rating';
 
 import { Link } from 'react-router-dom';
 
+import Geolib from 'geolib';
 import './style.scss';
 
 const { Title } = Typography;
 
 class Main extends Component {
+  static defaultProps = {
+    lan: 52,
+    lng: 21
+  };
+
   constructor() {
     super();
     this.state = {
@@ -21,17 +27,48 @@ class Main extends Component {
     };
 
     this.onPointSelect = this.onPointSelect.bind(this);
+    this.findBetterPoint = this.findBetterPoint.bind(this);
   }
 
   onPointSelect(id) {
+    if (this.state.selectedPoint) {
+      this.findBetterPoint(this.state.selectedPoint);
+    }
     this.setState({
       selectedPoint: this.state.points.find(point => point.id === id)
     });
   }
 
+  findBetterPoint(point) {
+    const betterPoints = this.state.points
+      .filter(p => {
+        return p.overAllRating > point.overAllRating;
+      })
+      .filter(p => {
+        const userLocation = {
+          latitude: this.props.lan,
+          longitude: this.props.lng
+        };
+        const pD = Geolib.getDistance(userLocation, {
+          latitude: p.coordinates[0],
+          longitude: p.coordinates[1]
+        });
+        const pointDistance = Geolib.getDistance(userLocation, {
+          latitude: point.coordinates[0],
+          longitude: point.coordinates[1]
+        });
+
+        return pD < pointDistance;
+      });
+
+    if (betterPoints.length) {
+      return betterPoints[0];
+    }
+  }
+
   async componentDidMount() {
     try {
-      const points = await requests.getPoints(52, 21);
+      const points = await requests.getPoints(this.props.lan, this.props.lng);
       if (points && points.data) {
         this.setState({
           points: points.data
