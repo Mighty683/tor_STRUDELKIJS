@@ -15,6 +15,17 @@
   white-space: normal;
 }
 
+.ant-btn-primary {
+  background-color: $color-orange;
+  border-color: $color-orange;
+
+  &:hover,
+  &:focus {
+    background-color: #be4000 !important;
+    border-color: #be4000 !important;
+  }
+}
+
 .icon-footer {
   margin: 0 4px;
 

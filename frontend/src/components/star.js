@@ -155,8 +155,8 @@ class Star extends Component {
         datasets: [
           {
             pointHoverBackgroundColor: 'transparent',
-            pointBorderColor: 'rgba(255, 90, 0, 1)',
-            backgroundColor: 'rgba(255, 90, 0, 0.6)',
+            pointBorderColor: 'rgba(255, 90, 0, 0)',
+            backgroundColor: `${this.state.gridColor}`,
             pointBackgroundColor: ['#006600', '#333399', '#cc0000'],
             data: this.props.data,
             pointHitRadius: 25,

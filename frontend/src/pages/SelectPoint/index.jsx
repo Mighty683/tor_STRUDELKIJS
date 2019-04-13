@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Map from '../../components/map';
 import requests from '../../requests';
 import Star from '../../components/star';
-import { Spin, Card, Row, Col, Typography, Icon } from 'antd';
+import { Spin, Card, Row, Col, Typography, Icon, Button, Modal } from 'antd';
 import Rating from '../../components/rating';
 
 import './style.scss';
@@ -14,7 +14,8 @@ class Main extends Component {
     super();
     this.state = {
       points: [],
-      selectedPoint: null
+      selectedPoint: null,
+      modalOpen: false
     };
 
     this.onPointSelect = this.onPointSelect.bind(this);
@@ -38,6 +39,12 @@ class Main extends Component {
       console.log(e);
     }
   }
+
+  showModal = () => {
+    this.setState(state => ({
+      modalOpen: !state.modalOpen
+    }));
+  };
 
   render() {
     return (
@@ -110,6 +117,19 @@ class Main extends Component {
                           </Card>
                         </div>
                       </Col>
+                      <Row gutter={16}>
+                        <Col className="gutter-row" xs={24}>
+                          <div style={{ textAlign: 'center' }}>
+                            <Button
+                              onClick={this.showModal}
+                              className="main-page__button"
+                              type="primary"
+                            >
+                              <strong>Wybieram punkt!</strong>
+                            </Button>
+                          </div>
+                        </Col>
+                      </Row>
                     </Row>
                   </div>
                 ) : (
@@ -121,6 +141,17 @@ class Main extends Component {
                 )}
               </div>
             </Col>
+            <Modal
+              visible={this.state.modalOpen}
+              onOk={() => {}}
+              onCancel={() => {}}
+              okText="Zgadzam się!"
+              cancelText="Innym razem"
+            >
+              <Title style={{ textAlign: 'center' }} level={1}>
+                <Icon type="gift" theme="filled" />
+              </Title>
+            </Modal>
           </Row>
         ) : (
           <div className="select-point__spinner-container">
