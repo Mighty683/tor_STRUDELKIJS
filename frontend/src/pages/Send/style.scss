@@ -1,12 +1,12 @@
 @import '../../styles/variables';
 
 .send {
-  min-height: calc(100vh - 69px - 64px);
+  min-height: calc(100vh - 69px - 64px - 32px - 60px - 60px);
   padding: 30px;
   position: relative;
   overflow: hidden;
   &__title {
-    background: #ececec;
+    margin-bottom: 30px;
   }
 
   &__info {

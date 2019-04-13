@@ -36,17 +36,19 @@ class Send extends Component {
 
   render() {
     return (
-      <div>
+      <div className="send">
         <div className="send__title">
           <Title style={{ textAlign: 'center' }} level={3}>
-            Oceń punkt odbioru: <Icon type="smile" />
+            Oceń punkt odbioru <Icon type="smile" />
           </Title>
         </div>
         <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
           <div className="gutter-box">
             <Card
               hoverable
-              title={<strong>Szczegóły punktu odbioru przesyłek:</strong>}
+              title={
+                <strong>Szczegóły ocenianego punktu odbioru przesyłek</strong>
+              }
               bordered
             >
               <Rating data={this.state.point} />
