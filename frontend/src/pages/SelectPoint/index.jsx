@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import Map from '../../components/map';
 import requests from '../../requests';
 import Star from '../../components/star';
-import { Spin, Card, Row, Col } from 'antd';
+import { Spin, Card, Row, Col, Typography, Icon } from 'antd';
 
 import './style.scss';
+
+const { Title } = Typography;
 
 class Main extends Component {
   constructor() {
@@ -80,7 +82,11 @@ class Main extends Component {
                     </Col>
                   </Row>
                 </div>
-              ) : null}
+              ) : (
+                <Title style={{ textAlign: 'center' }} level={3}>
+                  Wybierz swój punkt odbioru paczki <Icon type="smile" />
+                </Title>
+              )}
             </div>
           </div>
         ) : (
