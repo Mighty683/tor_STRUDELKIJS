@@ -1,4 +1,14 @@
+@import '../../styles/variables';
+
 .map {
   height: calc((100vh - 69px - 64px) / 2);
   width: 100%;
+
+  &__marker {
+    height: 10vh;
+
+    @media (min-width: $break-sm) {
+      height: 5vh;
+    }
+  }
 }
