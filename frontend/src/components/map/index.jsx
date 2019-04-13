@@ -14,20 +14,22 @@ class Map extends Component {
 
   render() {
     return (
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY }}
-        defaultCenter={this.props.center}
-        defaultZoom={this.props.zoom}
-      >
-        {this.props.points.map(point => (
-          <MapMarker
-            key={point.id}
-            lat={point.coordinates[0]}
-            lng={point.coordinates[1]}
-            point={point}
-          />
-        ))}
-      </GoogleMapReact>
+      <div style={{ height: '100vh', width: '100%' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY }}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+        >
+          {this.props.points.map(point => (
+            <MapMarker
+              key={point.id}
+              lat={point.coordinates[0]}
+              lng={point.coordinates[1]}
+              point={point}
+            />
+          ))}
+        </GoogleMapReact>
+      </div>
     );
   }
 }
