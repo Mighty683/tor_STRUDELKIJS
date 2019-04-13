@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
+import RuchLogo from '../../assets/logo-ruch.svg';
+import PocztaLogo from '../../assets/logo-poczta.svg';
+import InpostLogo from '../../assets/logo-inpost.svg';
 
-class Rating extends Component {
+import './style.scss';
+
+class Index extends Component {
   render() {
     const parcelType = this.props.data[2];
     let parcelRealName;
+    let parcelLogo;
 
     switch (parcelType) {
       case 'POCZTA_POLSKA':
         parcelRealName = 'Poczta Polska';
+        parcelLogo = PocztaLogo;
         break;
       case 'PACZKOMAT':
         parcelRealName = 'Paczkomat InPost';
+        parcelLogo = InpostLogo;
         break;
       case 'RUCH':
         parcelRealName = 'Paczkomat InPost';
+        parcelLogo = RuchLogo;
         break;
       default:
         parcelRealName = '';
@@ -21,12 +30,15 @@ class Rating extends Component {
 
     return (
       <div>
+        <img className="rating-image" src={parcelLogo} alt={parcelRealName} />
         <p>
           <strong>{parcelRealName}</strong>
         </p>
+        <p>Adres:</p>
         <p>
-          {this.props.data[1].city} {this.props.data[1].postalCode}{' '}
-          {this.props.data[1].street}
+          ul. {this.props.data[1].street}
+          <br />
+          {this.props.data[1].postalCode} {this.props.data[1].city}
         </p>
 
         <p>Godziny otwarcia: </p>
@@ -46,4 +58,4 @@ class Rating extends Component {
   }
 }
 
-export default Rating;
+export default Index;

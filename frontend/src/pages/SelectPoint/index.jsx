@@ -43,58 +43,80 @@ class Main extends Component {
     return (
       <div className="select-point">
         {this.state.points.length ? (
-          <div>
-            <Map
-              onPointSelect={this.onPointSelect}
-              points={this.state.points}
-            />
-            <div className="select-point__info-container">
-              {this.state.selectedPoint ? (
-                <div style={{ background: '#ECECEC', padding: '30px' }}>
-                  <Row gutter={16}>
-                    <Col className="gutter-row" xs={24} md={12}>
-                      <div className="gutter-box">
-                        <Card
-                          hoverable
-                          title={
-                            <strong>Szczegóły punktu odbioru przesyłek:</strong>
-                          }
-                          bordered
-                        >
-                          <Rating
-                            key={this.state.selectedPoint.id}
-                            data={Object.values(this.state.selectedPoint)}
-                          />
-                        </Card>
-                      </div>
-                    </Col>
-                    <Col className="gutter-row" xs={24} md={12}>
-                      <div className="gutter-box">
-                        <Card
-                          hoverable
-                          title={
-                            <strong>Ocena punktu odbioru przesyłek:</strong>
-                          }
-                          bordered
-                        >
-                          <Star
-                            key={this.state.selectedPoint.id}
-                            data={Object.values(
-                              this.state.selectedPoint.ratings
-                            )}
-                          />
-                        </Card>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              ) : (
-                <Title style={{ textAlign: 'center' }} level={3}>
-                  Wybierz swój punkt odbioru paczki <Icon type="smile" />
-                </Title>
-              )}
-            </div>
-          </div>
+          <Row gutter={16}>
+            <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+              <div className="gutter-box">
+                <Map
+                  onPointSelect={this.onPointSelect}
+                  points={this.state.points}
+                />
+              </div>
+            </Col>
+            <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+              <div className="gutter-box">
+                {this.state.selectedPoint ? (
+                  <div className="select-point__info-container">
+                    <Row gutter={16}>
+                      <Col
+                        className="gutter-row"
+                        xs={24}
+                        md={24}
+                        lg={24}
+                        xl={10}
+                      >
+                        <div className="gutter-box">
+                          <Card
+                            hoverable
+                            title={
+                              <strong>
+                                Szczegóły punktu odbioru przesyłek:
+                              </strong>
+                            }
+                            bordered
+                          >
+                            <Rating
+                              key={this.state.selectedPoint.id}
+                              data={Object.values(this.state.selectedPoint)}
+                            />
+                          </Card>
+                        </div>
+                      </Col>
+                      <Col
+                        className="gutter-row select-point__info-column"
+                        xs={24}
+                        md={24}
+                        lg={24}
+                        xl={14}
+                      >
+                        <div className="gutter-box">
+                          <Card
+                            hoverable
+                            title={
+                              <strong>Oceny punktu odbioru przesyłek:</strong>
+                            }
+                            bordered
+                          >
+                            <Star
+                              key={this.state.selectedPoint.id}
+                              data={Object.values(
+                                this.state.selectedPoint.ratings
+                              )}
+                            />
+                          </Card>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                ) : (
+                  <div className="select-point__info-container--empty">
+                    <Title style={{ textAlign: 'center' }} level={3}>
+                      Wybierz swój punkt odbioru paczki <Icon type="smile" />
+                    </Title>
+                  </div>
+                )}
+              </div>
+            </Col>
+          </Row>
         ) : (
           <div className="select-point__spinner-container">
             <Spin size="large" tip="Ładowanie..." />
