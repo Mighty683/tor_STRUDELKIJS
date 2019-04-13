@@ -2,25 +2,25 @@ import React, { Component } from 'react';
 import RuchLogo from '../../assets/logo-ruch.svg';
 import PocztaLogo from '../../assets/logo-poczta.svg';
 import InpostLogo from '../../assets/logo-inpost.svg';
+import { INPOST, POLIST_POST, RUCH } from '../../common/delivery-point.enum';
 
 import './style.scss';
 
 class Index extends Component {
   render() {
-    const parcelType = this.props.data[2];
+    const parcelType = this.props.data.type;
     let parcelRealName;
     let parcelLogo;
-
     switch (parcelType) {
-      case 'POCZTA_POLSKA':
+      case POLIST_POST:
         parcelRealName = 'Poczta Polska';
         parcelLogo = PocztaLogo;
         break;
-      case 'PACZKOMAT':
+      case INPOST:
         parcelRealName = 'Paczkomat InPost';
         parcelLogo = InpostLogo;
         break;
-      case 'RUCH':
+      case RUCH:
         parcelRealName = 'Paczkomat InPost';
         parcelLogo = RuchLogo;
         break;
