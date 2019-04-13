@@ -13,6 +13,8 @@
       height: 200px;
       margin-bottom: 40px;
     }
+
+    @include animation-bounce;
   }
 
   &__button {
