@@ -2,9 +2,13 @@
 @import '../../styles/mixins';
 
 .map {
-  height: calc((100vh - 69px - 64px) / 2);
+  height: calc((100vh - 69px - 64px - 60px) / 2);
   width: 100%;
   overflow: hidden;
+
+  @media (min-width: $break-xl) {
+    height: calc(100vh - 69px - 64px - 60px);
+  }
 
   &__marker {
     position: relative;
@@ -12,10 +16,10 @@
     &-tooltip {
       display: none;
       position: absolute;
-      top: -120px;
+      top: -85px;
       background-color: $color-white;
-      height: 100px;
-      width: 200px;
+      height: 70px;
+      width: 120px;
       z-index: 10000;
       border-radius: 10px;
       box-shadow: 10px 10px 35px -20px rgba(0, 0, 0, 0.75);
@@ -23,6 +27,12 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (min-width: $break-xl) {
+        top: -120px;
+        height: 100px;
+        width: 200px;
+      }
     }
 
     &--visible-tooltip {
