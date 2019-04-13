@@ -34,7 +34,7 @@ class Star extends Component {
               <span className="dot blue" /> - {AVAILABILITY}
             </p>
             <p>
-              <div className="dot red" /> - {TIME_OF_RETRIVAL}
+              <span className="dot red" /> - {TIME_OF_RETRIVAL}
             </p>
           </div>
         ) : null}
