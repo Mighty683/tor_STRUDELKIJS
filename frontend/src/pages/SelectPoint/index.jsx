@@ -251,7 +251,7 @@ class Main extends Component {
                     to={{
                       pathname: '/send',
                       state: {
-                        point: this.state.selectedPoint
+                        point: this.findBetterPoint(this.state.selectedPoint)
                       }
                     }}
                   >
