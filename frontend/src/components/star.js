@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import { Chart } from 'chart.js';
+import 'chartjs-plugin-dragdata';
+import {
+  SERVICE,
+  AVAILABILITY,
+  TIME_OF_RETRIVAL
+} from '../common/criteria.enum';
 
 class Star extends Component {
   constructor(props) {
@@ -7,10 +13,8 @@ class Star extends Component {
     this.myRef = React.createRef();
   }
   render() {
-    console.log(this.props.data);
     return (
       <div>
-        <p>{this.props.data.address.postalCode}</p>
         <canvas ref={this.myRef} width="200" height="200" />
       </div>
     );
@@ -20,10 +24,16 @@ class Star extends Component {
     const myRadarChart = new Chart(this.myRef.current, {
       type: 'radar',
       data: {
-        labels: ['Running', 'Swimming', 'Eating'],
+        labels: [SERVICE, AVAILABILITY, TIME_OF_RETRIVAL],
         datasets: [
           {
-            data: [20, 18, 15]
+            label: 'Data 2',
+            data: [20, 18, 15],
+            pointBackgroundColor: '#609ACF'
+          },
+          {
+            label: 'Data 1',
+            data: [5, 18, 15]
           }
         ]
       },
@@ -31,6 +41,11 @@ class Star extends Component {
         scale: {
           // Hides the scale
           display: true
+        },
+        dragData: true,
+        dragDataRound: 0,
+        onDragEnd: function(event, datasetIndex, index, value) {
+          console.log('elo');
         }
       }
     });
