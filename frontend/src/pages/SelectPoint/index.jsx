@@ -213,7 +213,7 @@ class Main extends Component {
                   <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
                     <div className="gutter-box">
                       <p>
-                        <strong>Punkt odbioru położony bliżej:</strong>
+                        <strong>Punkt odbioru położony bliżej Ciebie:</strong>
                       </p>
                       <Rating
                         key={this.findBetterPoint(this.state.selectedPoint).id}

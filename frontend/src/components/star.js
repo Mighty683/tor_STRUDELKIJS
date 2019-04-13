@@ -143,9 +143,6 @@ class Star extends Component {
             </p>
           </div>
         ) : null}
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
-          Rozkład ocen
-        </div>
       </div>
     );
   }

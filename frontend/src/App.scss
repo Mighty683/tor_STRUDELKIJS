@@ -69,6 +69,14 @@
     display: none;
   }
 
+  canvas {
+    display: none !important;
+  }
+
+  .legend {
+    display: none;
+  }
+
   .gutter-box {
     margin-bottom: 40px;
   }
