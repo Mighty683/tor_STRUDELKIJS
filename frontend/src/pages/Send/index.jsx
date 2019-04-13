@@ -93,7 +93,10 @@ class Send extends Component {
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
             <p>Dziękujemy!</p>
-            <p>Twoja ocena to: {this.state.overall}</p>
+            <p>
+              Twoja ocena to:{' '}
+              {this.state.overall && this.state.overall.toFixed(2)}
+            </p>
             <Icon type="gift" theme="filled" />
           </Title>
           <div style={{ textAlign: 'center' }}>
