@@ -61,3 +61,45 @@
     fill: goldenrod;
   }
 }
+
+.ant-modal {
+  width: 90vw !important;
+
+  img {
+    display: none;
+  }
+
+  .gutter-box {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $break-xl) {
+    .gutter-box {
+      margin-bottom: 0;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    width: 50vw !important;
+  }
+}
+
+.button-modal {
+  &-first {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: $break-xs) {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+
+  &-second {
+    @media (min-width: $break-xs) {
+      margin-left: 10px;
+    }
+  }
+}

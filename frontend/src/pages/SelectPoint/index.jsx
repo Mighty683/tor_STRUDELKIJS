@@ -185,20 +185,58 @@ class Main extends Component {
               <Modal
                 style={{ textAlign: 'center' }}
                 visible={this.state.modalOpen}
+                closable
+                onCancel={this.showModal}
               >
                 <Title level={1}>
                   <Icon type="gift" theme="filled" />
                 </Title>
-                <Title level={4}>
+                <Title level={4} style={{ marginBottom: '30px' }}>
                   Nasz system znalazł świetny punkt odbioru bliżej Ciebie!
                 </Title>
-                <p>Aktualnie wybrany punkt:</p>
-                <Rating
-                  key={this.state.selectedPoint.id}
-                  data={this.state.selectedPoint}
-                />
+                <Row gutter={25} type="flex" align="top">
+                  <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+                    <div className="gutter-box">
+                      <p>Aktualnie wybrany punkt:</p>
+                      <Rating
+                        key={this.state.selectedPoint.id}
+                        data={this.state.selectedPoint}
+                      />
+                      <Star
+                        overall={this.state.selectedPoint.overAllRating}
+                        key={this.state.selectedPoint.id}
+                        data={Object.values(this.state.selectedPoint.ratings)}
+                        overallRating={this.state.selectedPoint.overallRating}
+                      />
+                    </div>
+                  </Col>
+                  <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
+                    <div className="gutter-box">
+                      <p>
+                        <strong>Punkt odbioru położony bliżej:</strong>
+                      </p>
+                      <Rating
+                        key={this.findBetterPoint(this.state.selectedPoint).id}
+                        data={this.findBetterPoint(this.state.selectedPoint)}
+                      />
+                      <Star
+                        overall={
+                          this.findBetterPoint(this.state.selectedPoint)
+                            .overAllRating
+                        }
+                        key={this.findBetterPoint(this.state.selectedPoint).id}
+                        data={Object.values(
+                          this.findBetterPoint(this.state.selectedPoint).ratings
+                        )}
+                        overallRating={
+                          this.findBetterPoint(this.state.selectedPoint)
+                            .overallRating
+                        }
+                      />
+                    </div>
+                  </Col>
+                </Row>
                 <div>
-                  <Button style={{ marginRight: '10px' }}>Innym razem</Button>
                   <Link
                     to={{
                       pathname: '/send',
@@ -207,10 +245,17 @@ class Main extends Component {
                       }
                     }}
                   >
-                    <Button
-                      className="ant-btn-primary"
-                      style={{ marginLeft: '10px' }}
-                    >
+                    <Button className="button-modal-first">Innym razem</Button>
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: '/send',
+                      state: {
+                        elo: this.state.selectedPoint
+                      }
+                    }}
+                  >
+                    <Button className="ant-btn-primary button-modal-second">
                       Zgadzam się!
                     </Button>
                   </Link>
