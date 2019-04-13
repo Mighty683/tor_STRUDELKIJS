@@ -24,18 +24,20 @@ class Star extends Component {
     return (
       <div className={this.props.className}>
         <canvas ref={this.myRef} />
-        <div className="legend">
-          Legenda:
-          <p>
-            <div className="dot green" /> - {SERVICE}
-          </p>
-          <p>
-            <div className="dot blue" /> - {AVAILABILITY}
-          </p>
-          <p>
-            <div className="dot red" /> - {TIME_OF_RETRIVAL}
-          </p>
-        </div>
+        {this.state.isMobile ? (
+          <div className="legend">
+            Legenda:
+            <p>
+              <span className="dot green" /> - {SERVICE}
+            </p>
+            <p>
+              <span className="dot blue" /> - {AVAILABILITY}
+            </p>
+            <p>
+              <div className="dot red" /> - {TIME_OF_RETRIVAL}
+            </p>
+          </div>
+        ) : null}
       </div>
     );
   }
@@ -58,7 +60,10 @@ class Star extends Component {
         ]
       },
       options: {
-        aspectRatio: 1,
+        layout: {
+          padding: 5
+        },
+        aspectRatio: this.isMobile ? 1 : 2,
         maintainAspectRatio: true,
         legend: {
           display: false
