@@ -29,7 +29,9 @@ class Index extends Component {
     }
     return (
       <div>
-        <img className="rating-image" src={parcelLogo} alt={parcelRealName} />
+        <div className="rating-image-container">
+          <img className="rating-image" src={parcelLogo} alt={parcelRealName} />
+        </div>
         <h2>
           <strong>
             {parcelRealName} (nr {this.props.data.id})

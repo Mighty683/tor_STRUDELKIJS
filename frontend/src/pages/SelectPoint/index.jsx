@@ -178,7 +178,7 @@ class Main extends Component {
                             className="main-page__button"
                             type="primary"
                           >
-                            <strong>Wybieram punkt!</strong>
+                            <strong>Wybieram punkt</strong>
                           </Button>
                         </div>
                       </Col>
@@ -227,7 +227,10 @@ class Main extends Component {
                     <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
                       <div className="gutter-box">
                         <p>
-                          <strong>Punkt odbioru położony bliżej:</strong>
+                          <strong>
+                            <Icon type="check-square" /> Punkt odbioru położony
+                            bliżej:
+                          </strong>
                         </p>
                         <Rating
                           key={this.state.betterPoint.id}
@@ -263,7 +266,7 @@ class Main extends Component {
                     }}
                   >
                     <Button className="ant-btn-primary button-modal-second">
-                      Zgadzam się!
+                      Zgadzam się
                     </Button>
                   </Link>
                 </div>

@@ -1,6 +1,13 @@
 .rating {
   &-image {
     max-width: 150px;
-    margin-bottom: 30px;
+
+    &-container {
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
   }
 }
