@@ -199,6 +199,7 @@ class Main extends Component {
                 visible={this.state.modalOpen}
                 closable
                 onCancel={this.showModal}
+                destroyOnClose
               >
                 <Title level={1}>
                   <Icon type="gift" theme="filled" />
