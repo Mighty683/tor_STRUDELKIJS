@@ -69,7 +69,7 @@ class Star extends Component {
             maxTicksLimit: 2
           }
         },
-        dragData: this.props.draggable,
+        dragData: this.props.nieprzesuwable,
         dragDataRound: 0,
         onDragEnd: function(event, datasetIndex, index, value) {
           this.props.onDataChange &&
