@@ -1,36 +1,12 @@
 @import '../../styles/variables';
 
-.select-point,
-.edit-point {
+.send {
   min-height: calc(100vh - 69px - 64px);
   padding: 30px;
   position: relative;
   overflow: hidden;
-
-  &__spinner {
-    &-container {
-      text-align: center;
-
-      .ant-spin {
-        color: $color-black;
-
-        .ant-spin-dot-item {
-          background-color: $color-orange;
-        }
-      }
-    }
-  }
-
-  &__switch,
-  &__button {
-    &-container {
-      margin-bottom: 2rem;
-      margin-top: 2rem;
-      text-align: center;
-      .ant-switch {
-        color: $color-orange;
-      }
-    }
+  &__title {
+    background: #ececec;
   }
 
   &__info {

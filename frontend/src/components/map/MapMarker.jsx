@@ -3,6 +3,7 @@ import Mark from '../../assets/map-marker.svg';
 import RuchLogo from '../../assets/logo-ruch.svg';
 import PocztaLogo from '../../assets/logo-poczta.svg';
 import InpostLogo from '../../assets/logo-inpost.svg';
+import { INPOST, POLIST_POST, RUCH } from '../../common/delivery-point.enum';
 
 class MapMarker extends Component {
   constructor(props) {
@@ -26,11 +27,11 @@ class MapMarker extends Component {
 
     let logo = null;
 
-    if (point.type === 'PACZKOMAT') {
+    if (point.type === INPOST) {
       logo = InpostLogo;
-    } else if (point.type === 'POCZTA_POLSKA') {
+    } else if (point.type === POLIST_POST) {
       logo = PocztaLogo;
-    } else if (point.type === 'RUCH') {
+    } else if (point.type === RUCH) {
       logo = RuchLogo;
     }
 
