@@ -241,7 +241,7 @@ class Main extends Component {
                     to={{
                       pathname: '/send',
                       state: {
-                        elo: this.state.selectedPoint
+                        point: this.state.selectedPoint
                       }
                     }}
                   >
@@ -251,7 +251,7 @@ class Main extends Component {
                     to={{
                       pathname: '/send',
                       state: {
-                        elo: this.state.selectedPoint
+                        point: this.state.selectedPoint
                       }
                     }}
                   >
