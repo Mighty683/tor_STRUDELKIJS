@@ -29,6 +29,7 @@ function mapData (entry, index) {
     name: entry.name,
     coordinates: [Number(entry['longitude']), Number(entry['latitude'])],
     openHoures: JSON.parse(entry['open-houres']),
+    overAllRating: Math.random * 10,
     ratings: {
       service: Math.random() * 5,
       availability: Math.random() * 5,
