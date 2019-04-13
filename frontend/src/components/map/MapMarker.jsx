@@ -35,7 +35,7 @@ class MapMarker extends Component {
     }
 
     return (
-      <div ref={this.ref} className={`${this.props.className} map__marker`}>
+      <div ref={this.ref} className={`map__marker ${this.props.selectedClass}`}>
         {logo && (
           <div
             className="map__marker-tooltip"
